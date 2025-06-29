@@ -1,0 +1,2438 @@
+<config>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Bosses -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/gameevents">
+		
+		<action_sequence name="AlexRebirth">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Entity"/>
+			<property name="allow_while_dead" value="false"/>
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="bossAlexHalf"/>
+				<property name="spawn_count" value="1"/>
+				<property name="air_spawn" value="false"/>
+				<property name="min_distance" value="8"/>
+				<property name="max_distance" value="16"/>
+				<property name="spawn_type" value="Position"/>
+			</action>
+		</action_sequence>
+			
+		<!-- *** DEVOURER MINIOS -->
+		<action_sequence name="eventDevourerMinions">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Entity"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+			<loop class="While">
+			<property name="phase" value="0"/>
+				<decision class="If">
+					<requirement class="GroupLiveCount">
+						<property name="target_group" value="zombies"/>
+						<property name="operation" value="LessThan"/>
+						<property name="count" value="2"/>
+					</requirement>
+					<action class="Delay">
+						<property name="time" value="20"/>
+					</action>
+					<action class="SpawnEntity">
+						<property name="entity_names" value="DevourerMinion"/>
+						<property name="spawn_count" value="1"/>
+						<property name="air_spawn" value="false"/>
+						<property name="add_to_group" value="zombies"/>
+						<property name="safe_spawn" value="true"/>
+						<property name="min_distance" value="8"/>
+						<property name="max_distance" value="16"/>
+						<property name="spawn_type" value="Position"/>
+					</action>
+					<action class="PlaySound">
+						<property name="sound" value="zombiemalealert" param1="alertsound"/>
+						<property name="phase" value="1"/>
+					</action>
+				</decision>
+			</loop>
+		</action_sequence>
+		
+		<!-- *** BEAR DADDY MINIOS -->
+		<action_sequence name="eventBearDaddyMinions">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Entity"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+			<loop class="While">
+			<property name="phase" value="0"/>
+				<decision class="If">
+					<requirement class="GroupLiveCount">
+						<property name="target_group" value="zombies"/>
+						<property name="operation" value="LessThan"/>
+						<property name="count" value="1"/>
+					</requirement>
+					<action class="Delay">
+						<property name="time" value="20"/>
+					</action>
+					<action class="SpawnEntity">
+						<property name="entity_names" value="BearDaddyMinion"/>
+						<property name="spawn_count" value="1"/>
+						<property name="air_spawn" value="false"/>
+						<property name="add_to_group" value="zombies"/>
+						<property name="safe_spawn" value="true"/>
+						<property name="min_distance" value="8"/>
+						<property name="max_distance" value="16"/>
+						<property name="spawn_type" value="Position"/>
+					</action>
+					<action class="PlaySound">
+						<property name="sound" value="zombiemalealert" param1="alertsound"/>
+						<property name="phase" value="1"/>
+					</action>
+				</decision>
+			</loop>
+		</action_sequence>
+		
+		<!-- *** BEAR DADDY MINIOS -->
+		<action_sequence name="eventGargulMinions">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Entity"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+			<loop class="While">
+			<property name="phase" value="0"/>
+				<decision class="If">
+					<requirement class="GroupLiveCount">
+						<property name="target_group" value="zombies"/>
+						<property name="operation" value="LessThan"/>
+						<property name="count" value="2"/>
+					</requirement>
+					<action class="Delay">
+						<property name="time" value="20"/>
+					</action>
+					<action class="SpawnEntity">
+						<property name="entity_names" value="GargulMinion"/>
+						<property name="spawn_count" value="1"/>
+						<property name="air_spawn" value="false"/>
+						<property name="add_to_group" value="zombies"/>
+						<property name="safe_spawn" value="true"/>
+						<property name="min_distance" value="8"/>
+						<property name="max_distance" value="16"/>
+						<property name="spawn_type" value="Position"/>
+						<property name="air_spawn" value="true"/>
+					</action>
+					<action class="PlaySound">
+						<property name="sound" value="zombiemalealert" param1="alertsound"/>
+						<property name="phase" value="1"/>
+					</action>
+				</decision>
+			</loop>
+		</action_sequence>
+		
+		<!-- *** VETERAN BROTHERHOOD -->
+		<action_sequence name="spawnerVeteranBrotherhood">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Entity"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+			
+			<loop class="For">
+				<property name="phase" value="1" />
+				<property name="loop_count" value="2" />
+				
+				<action class="SpawnEntity">
+					<property name="entity_names" value="zombieDemolition,zombieSoldierFeral,zombieSoldierRadiated"/>
+					<property name="spawn_count" value="1"/>
+					<property name="max_distance" value="5"/>
+					<property name="min_distance" value="10"/>
+				</action>
+				
+				<action class="Delay">
+					<property name="time" value="2"/>
+				</action>				
+			</loop>
+		</action_sequence>
+		
+		<!-- Veteran drop item -->
+		<action_sequence name="BossesDropItem">
+			<requirement class="HasHeld" />
+			
+			<action class="DropHeldItem">
+				<property name="drop_sound" value="itemdropped"/>
+			</action>
+		</action_sequence>
+		
+		<!-- *** CARRIER HORDE -->
+		<action_sequence name="eventCarrierHorde">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Entity"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+		
+			<loop class="While">
+			<property name="phase" value="0"/>
+				<decision class="If">
+					<requirement class="GroupLiveCount">
+						<property name="target_group" value="zombies"/>
+						<property name="operation" value="LessThan"/>
+						<property name="count" value="3"/>
+					</requirement>
+					<action class="Delay">
+						<property name="time" value="25"/>
+					</action>
+					<action class="SpawnEntity">
+						<property name="entity_names" value="bossBitch,bossBurningFlesh,bossCholera,zombieCarrierActive,zombieCarrierDef"/>
+						<property name="spawn_count" value="1"/>
+						<property name="air_spawn" value="false"/>
+						<property name="add_to_group" value="zombies"/>
+						<property name="safe_spawn" value="true"/>
+						<property name="min_distance" value="4"/>
+						<property name="max_distance" value="8"/>
+						<property name="spawn_type" value="Position"/>
+					</action>
+					<action class="PlaySound">
+						<property name="sound" value="zombiemalealert" param1="alertsound"/>
+						<property name="phase" value="1"/>
+					</action>
+				</decision>
+			</loop>
+		</action_sequence>
+		
+		<action_sequence name="eventPlayerBonusReward">
+			<action class="AddItems">
+				<property name="added_items" value="donateZCoin" />
+				<property name="added_item_counts" value="5" />
+			</action>	
+		</action_sequence>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Contracts -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/gameevents">
+		
+		<!-- Getting a bonus to rare specimens from minibosses -->
+		<action_sequence name="action_addBonus_MiniBossSample">					
+			<action class="ModifyCVar">
+				<property name="phase" value="0" />
+				<property name="cvar" value="LegBonus_MinibossSamples" />
+				<property name="operation" value="add" />
+				<property name="value" value=".05" />
+			</action>
+			
+			<action class="PlaySound">
+				<property name="sound" value="read_skillbook" />
+				<property name="inside_head" value="true" />
+				<property name="can_disable" value="false" />
+			</action>
+		</action_sequence>
+		
+		<!-- Getting a bonus to rare specimens from bosses -->
+		<action_sequence name="action_addBonus_BossSample">					
+			<action class="ModifyCVar">
+				<property name="phase" value="0" />
+				<property name="cvar" value="LegBonus_BossSamples" />
+				<property name="operation" value="add" />
+				<property name="value" value=".025" />
+			</action>
+			
+			<action class="PlaySound">
+				<property name="sound" value="read_skillbook" />
+				<property name="inside_head" value="true" />
+				<property name="can_disable" value="false" />
+			</action>
+		</action_sequence>
+		
+		<!-- Getting a bonus to rare specimens from all -->
+		<action_sequence name="action_addBonus_AllSample">					
+			<action class="ModifyCVar">
+				<property name="phase" value="0" />
+				<property name="cvar" value="LegBonus_AllSamples" />
+				<property name="operation" value="add" />
+				<property name="value" value=".01" />
+			</action>
+			
+			<action class="PlaySound">
+				<property name="sound" value="read_skillbook" />
+				<property name="inside_head" value="true" />
+				<property name="can_disable" value="false" />
+			</action>
+		</action_sequence>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Perfection -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/gameevents">
+				
+		<action_sequence name="action_1Skillpont">
+
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="1" />
+			</action>
+
+		</action_sequence>
+	
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Radiostation -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+	<append xpath="/gameevents">
+		
+		<!-- Launching a wave of small cases -->				
+		<action_sequence name="SmallCase_Event">					
+			<action class="AddBuff">
+				<property name="buff_name" value="Buff_SmallCase_Spawner" />
+			</action>
+			
+			<action class="PlaySound">
+				<property name="sound" value="twitch_shield_enemies" />
+				<property name="inside_head" value="true" />
+				<property name="can_disable" value="false" />
+			</action>
+		</action_sequence>	
+		<action_sequence name="SmallCase_Event_Spawner">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+					
+			<loop class="While">	
+				<decision class="If">				
+					<requirement class="CVar">
+						<property name="cvar" value="SmallCase_Status"/>
+						<property name="operation" value="Equals" />
+						<property name="value" value="1" />
+					</requirement>
+					
+					<requirement class="GroupLiveCount">
+						<property name="target_group" value="zombies"/>
+						<property name="operation" value="LessThan"/>
+						<property name="count" value="3"/>
+					</requirement>
+						
+					<action class="Delay">
+						<property name="time" value="2"/>
+					</action>
+					
+					<action class="SpawnEntity">
+						<property name="entity_names" value="zombieArlene,zombieFatCop,zombieLab,zombieMarlene,zombieDarlene,zombiePartyGirlFeral,zombieNurseFeral,zombieSkateboarderFeral,zombieTomClarkFeral,zombieBoeFeral,zombieJoeRadiated,zombieSteveRadiated,zombieYoRadiated,zombieBusinessManRadiated,zombieUtilityWorkerRadiated"/>
+						<property name="spawn_count" value="1"/>
+						<property name="max_distance" value="16"/>
+						<property name="min_distance" value="8"/>
+						<property name="add_to_group" value="zombies"/>
+						<property name="add_buffs" value="EnemyDot_Buff,Zombie_BlockDamage_Buff" />
+					</action>
+				</decision>
+			</loop>
+		</action_sequence>
+		
+		<!-- Launching a wave of Medium cases -->
+		<action_sequence name="MediumCase_Event">
+			<action class="AddBuff">
+				<property name="buff_name" value="Buff_MediumCase_Spawner" />
+			</action>
+			
+			<action class="PlaySound">
+				<property name="sound" value="twitch_shield_enemies" />
+				<property name="inside_head" value="true" />
+				<property name="can_disable" value="false" />
+			</action>
+		</action_sequence>
+		<action_sequence name="MediumCase_Event_Spawner">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+					
+			<loop class="While">	
+				<decision class="If">				
+					<requirement class="CVar">
+						<property name="cvar" value="MediumCase_Status"/>
+						<property name="operation" value="Equals" />
+						<property name="value" value="1" />
+					</requirement>
+					
+					<requirement class="GroupLiveCount">
+						<property name="target_group" value="zombies"/>
+						<property name="operation" value="LessThan"/>
+						<property name="count" value="4"/>
+					</requirement>
+						
+					<action class="Delay">
+						<property name="time" value="2"/>
+					</action>
+					
+					<action class="SpawnEntity">
+						<property name="entity_names" value="zombieSkateboarder,zombieTomClark,zombieBoeFeral,zombieSpiderFeral,zombieFatHawaiianFeral,zombieLumberjackFeral,animalDireWolf,zombieFatCopFeral,zombiePartyGirlFeral,zombieSteveRadiated,zombieJanitorRadiated,zombieFemaleFatRadiated,zombieWightRadiated,zombieScreamerRadiated,zombieYoRadiated,zombieBurntElite,zombieTomClarkElite" param1="zombiename"/>
+						<property name="spawn_count" value="1"/>
+						<property name="max_distance" value="20"/>
+						<property name="min_distance" value="10"/>
+						<property name="add_to_group" value="zombies"/>
+						<property name="add_buffs" value="EnemyDot_Buff,Zombie_BlockDamage_Buff" />
+					</action>
+				</decision>
+			</loop>
+		</action_sequence>
+		
+		<!-- Launching a wave of Big cases -->
+		<action_sequence name="BigCase_Event">
+			<action class="AddBuff">
+				<property name="buff_name" value="Buff_BigCase_Spawner" />
+			</action>
+			
+			<action class="PlaySound">
+				<property name="sound" value="twitch_shield_enemies" />
+				<property name="inside_head" value="true" />
+				<property name="can_disable" value="false" />
+			</action>
+		</action_sequence>
+		<action_sequence name="BigCase_Event_Spawner">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="refund_inactivity" value="false"/>
+					
+			<loop class="While">	
+				<decision class="If">					
+					<requirement class="CVar">
+						<property name="cvar" value="BigCase_Status"/>
+						<property name="operation" value="Equals" />
+						<property name="value" value="1" />
+					</requirement>
+					
+					<requirement class="GroupLiveCount">
+						<property name="target_group" value="zombies"/>
+						<property name="operation" value="LessThan"/>
+						<property name="count" value="4"/>
+					</requirement>
+						
+					<action class="Delay">
+						<property name="time" value="2"/>
+					</action>
+					
+					<action class="SpawnEntity">
+						<property name="entity_names" value="zombieNurseFeral,zombieDarleneFeral,zombieBoeFeral,zombieSpiderFeral,zombieSkateboarderFeral,zombieBikerRadiated,animalDireWolf,zombieSkateboarderRadiated,zombieBowlerRadiated,zombieFatCopRadiated,zombieJanitorRadiated,zombieMarleneRadiated,zombieFemaleFatElite,zombieDemolitionElite,zombieSoldierElite,zombieLumberjackElite,zombieLabElite,zombieInmateElite,zombieJoeElite"/>
+						<property name="spawn_count" value="1"/>
+						<property name="max_distance" value="24"/>
+						<property name="min_distance" value="12"/>
+						<property name="add_to_group" value="zombies"/>
+						<property name="add_buffs" value="EnemyDot_Buff,Zombie_BlockDamage_Buff" />
+					</action>
+				</decision>
+			</loop>
+		</action_sequence>
+		
+		<!-- Wave for small case AMMO -->
+		<action_sequence name="Event_AmmoSmall_Check">
+			<action class="AddBuff">
+				<property name="buff_name" value="buff_AmmoSmall_Start" />
+			</action>
+		</action_sequence>
+		<action_sequence name="Spawner_Ammo_SmallWave">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			
+			<loop class="For">
+				<property name="phase" value="1" />
+				<property name="loop_count" value="7" />
+				
+				<action class="SpawnEntity">
+					<property name="entity_names" value="zombieSkateboarder,zombieTomClark,zombieBoeFeral,zombieSpiderFeral,zombieFatHawaiianFeral,zombieLumberjackFeral,animalDireWolf,zombieFatCopFeral,zombiePartyGirlFeral,zombieSteveRadiated,zombieJanitorRadiated,zombieFemaleFatRadiated,zombieWightRadiated,zombieScreamerRadiated,zombieYoRadiated,zombieBurntElite,zombieTomClarkElite"/>
+					<property name="spawn_count" value="1"/>
+					<property name="air_spawn" value="true"/>
+					<property name="max_distance" value="25"/>
+					<property name="min_distance" value="15"/>
+					<property name="add_buffs" value="EnemyDot_Buff" />
+				</action>
+				
+				<action class="Delay">
+					<property name="time" value="2"/>
+				</action>				
+			</loop>
+		</action_sequence>
+		
+		<!-- Wave for big case AMMO -->		
+		<action_sequence name="Event_AmmoBig_Check">
+			<action class="AddBuff">
+				<property name="buff_name" value="buff_AmmoBig_Start" />
+			</action>
+			
+		</action_sequence>
+		<action_sequence name="Spawner_Ammo_BigWave">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			
+			<loop class="For">
+				<property name="phase" value="1" />
+				<property name="loop_count" value="13" />
+				
+				<action class="SpawnEntity">
+					<property name="entity_names" value="zombieNurseFeral,zombieDarleneFeral,zombieBoeFeral,zombieSpiderFeral,zombieSkateboarderFeral,zombieBikerRadiated,animalDireWolf,zombieSkateboarderRadiated,zombieBowlerRadiated,zombieFatCopRadiated,zombieJanitorRadiated,zombieMarleneRadiated,zombieFemaleFatElite,zombieDemolitionElite,zombieSoldierElite,zombieLumberjackElite,zombieLabElite,zombieInmateElite,zombieJoeElite" param1="zombiename" />
+					<property name="spawn_count" value="1" param1="spawncount" />
+					<property name="air_spawn" value="true"/>
+					<property name="max_distance" value="25" param1="maxdist" />
+					<property name="min_distance" value="15" param1="mindist" />
+					<property name="add_buffs" value="EnemyDot_Buff" />
+				</action>
+				
+				<action class="Delay">
+					<property name="time" value="2"/>
+				</action>				
+			</loop>
+		</action_sequence>
+		
+		<!-- Smoke Signal Receiving Events -->
+		<action_sequence name="action_give_SignalSmokeFaint">
+			<action class="AddItems">
+				<property name="added_items" value="SignalSmokeFaint" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_SignalSmokeMedium">
+			<action class="AddItems">
+				<property name="added_items" value="SignalSmokeMedium" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_SignalSmokeStrong">
+			<action class="AddItems">
+				<property name="added_items" value="SignalSmokeStrong" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_SignalSmokeAmmoSmall">
+			<action class="AddItems">
+				<property name="added_items" value="SignalSmokeAmmoSmall" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>	
+		<action_sequence name="action_give_SignalSmokeAmmoBig">
+			<action class="AddItems">
+				<property name="added_items" value="SignalSmokeAmmoBig" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_SignalSmokeMedicineSmall">
+			<action class="AddItems">
+				<property name="added_items" value="SignalSmokeMedicineSmall" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_SignalSmokeMedicineBig">
+			<action class="AddItems">
+				<property name="added_items" value="SignalSmokeMedicineBig" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="action_spawn_reward_SmallCase_UltraLightAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropSmallLightAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_spawn_reward_SmallCase_UltraStrengthAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropSmallStrengthAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_spawn_reward_SmallCase_ExperimentalAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropSmallExperimentalAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="action_spawn_reward_MediumCase_UltraLightAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropMediumLightAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_spawn_reward_MediumCase_UltraStrengthAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropMediumStrengthAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_spawn_reward_MediumCase_ExperimentalAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropMediumExperimentalAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="action_spawn_reward_BigCase_UltraLightAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropBigLightAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_spawn_reward_BigCase_UltraStrengthAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropBigStrengthAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_spawn_reward_BigCase_ExperimentalAlloys">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropBigExperimentalAlloys"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+		<!-- Rare AMMO -->
+		<action_sequence name="action_drop762DU_100">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop762DU_100"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_drop762DU_1000">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop762DU_1000"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_drop44MagnumDU_100">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop44MagnumDU_100"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_drop44MagnumDU_1000">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop44MagnumDU_1000"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_drop9mmDU_100">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop9mmDU_100"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_drop9mmDU_1000">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop9mmDU_1000"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_dropShotgunDU_100">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropShotgunDU_100"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_dropShotgunDU_1000">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropShotgunDU_1000"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="action_dropTurretDU_1500">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="dropTurretDU_1500"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+		<!-- Rare MEDICINE -->
+		<action_sequence name="action_drop_medsmall">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop_RareMed_Small"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="action_drop_medbig">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="drop_RareMed_Big"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="15" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+		
+		<!-- Bait delivery -->
+		<action_sequence name="action_give_MediumBait">
+			<action class="AddItems">
+				<property name="added_items" value="bodyMediumBait" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_BigBait">
+			<action class="AddItems">
+				<property name="added_items" value="bodyBigBait" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		
+		<!-- Call Boss -->
+		<action_sequence name="Event_CallBull">
+			<property name="action_type" value="Game"/>
+			
+			<action class="Delay">
+				<property name="phase" value="1" />
+				<property name="time" value="10" />
+			</action>
+			
+			<action class="SpawnEntity">
+				<property name="phase" value="2" />
+				<property name="entity_names" value="bossBull"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="45" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="Event_CallShocker">
+			<property name="action_type" value="Game"/>
+			
+			<action class="Delay">
+				<property name="phase" value="1" />
+				<property name="time" value="10" />
+			</action>
+			
+			<action class="SpawnEntity">
+				<property name="phase" value="2" />
+				<property name="entity_names" value="bossShocker"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="45" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		<action_sequence name="Event_CallVeteran">
+			<property name="action_type" value="Game"/>
+			
+			<action class="Delay">
+				<property name="phase" value="1" />
+				<property name="time" value="10" />
+			</action>
+			
+			<action class="SpawnEntity">
+				<property name="phase" value="2" />
+				<property name="entity_names" value="bossVeteran"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="45" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="Event_CallCarrier">
+			<property name="action_type" value="Game"/>
+			
+			<action class="Delay">
+				<property name="phase" value="1" />
+				<property name="time" value="10" />
+			</action>
+			
+			<action class="SpawnEntity">
+				<property name="phase" value="2" />
+				<property name="entity_names" value="bossCarrier"/>
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="45" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+	
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_RoughTerrain -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/gameevents">
+							
+		<action_sequence name="SnowVehicleCheck">		
+			<requirement class="InVehicle">
+				<property name="invert" value="true"/>
+			</requirement>
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDeepSnowStatus"/>
+				<property name="phase" value="0"/>
+			</action>
+		</action_sequence>
+	
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_SelfTraits -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+	<append xpath="/gameevents">
+		<!-- Start generation -->
+		<action_sequence name="startSelfTraits">
+			<action class="AddBuff">
+				<property name="buff_name" value="buffCharacterSelfTraitsDistr" />
+			</action>
+			<action class="AddItems">
+				<property name="added_items" value="TraitsCharacterRefresh" />
+				<property name="added_item_counts" value="10" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="showstatsSelfTraits">
+			<action class="ShowMessageWindow">
+				<property name="message" value="Traits_message"/>
+				<property name="title" value="Traits_title"/>
+			</action>
+		</action_sequence>
+		
+		<!-- Adding a new progression -->
+		<action_sequence name="RefreshSelfTraits">
+			
+			<!-- Resets current Neg Traits -->	
+			<action class="ModifyProgression">
+				<property name="phase" value="0" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkDementia,perkObesity,perkDistrophia,perkAlarmism,perkBrittleBones,perkWeakling,perkAllergySufferer,perkWeakImmunity,perkClumsy,perkPacifist,perkFearDark,perkFearAnimals,perkFearZombie,perkFearFire,perkSocialPhobia,perkUnlucker" />
+				<property name="values" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
+			</action>
+			
+			<!-- Resets current Pos Traits -->	
+			<action class="ModifyProgression">
+				<property name="phase" value="0" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkGenius,perkAthleticBuild,perkCourage,perkBodybuilder,perkFastAdaptation,perkHardening,perkCharismatic,perkLuckyGuy,perkJackOfAllTrades,perkExperiencedHunter,perkCrusher,perkFearless,perkVeteranWasteland,perkSchumacher,perkTeamPlayer" />
+				<property name="values" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
+			</action>
+			
+			<!-- Adding -->
+			<!-- NEGATIVE -->
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDementia" />
+				<property name="values" value="@$NegTraitsDementia_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkObesity" />
+				<property name="values" value="@$NegTraitsObesity_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDistrophia" />
+				<property name="values" value="@$NegTraitsDistrophia_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAlarmism" />
+				<property name="values" value="@$NegTraitsAlarmism_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBrittleBones" />
+				<property name="values" value="@$NegTraitsBrittleBones_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakling" />
+				<property name="values" value="@$NegTraitsWeakling_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAllergySufferer" />
+				<property name="values" value="@$NegTraitsAllergySufferer_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakImmunity" />
+				<property name="values" value="@$NegTraitsWeakImmunity_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkClumsy" />
+				<property name="values" value="@$NegTraitsClumsy_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkPacifist" />
+				<property name="values" value="@$NegTraitsPacifist_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearDark" />
+				<property name="values" value="@$NegTraitsFearDark_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearAnimals" />
+				<property name="values" value="@$NegTraitsFearAnimals_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearZombie" />
+				<property name="values" value="@$NegTraitsFearZombie_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearFire" />
+				<property name="values" value="@$NegTraitsFearFire_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSocialPhobia" />
+				<property name="values" value="@$NegTraitsSocialPhobia_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkUnlucker" />
+				<property name="values" value="@$NegTraitsUnlucker_Current" />
+			</action>
+			
+			<!-- POSITIVE -->
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkGenius" />
+				<property name="values" value="@$PosTraitsGenius_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAthleticBuild" />
+				<property name="values" value="@$PosTraitsAthleticBuild_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCourage" />
+				<property name="values" value="@$PosTraitsCourage_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBodybuilder" />
+				<property name="values" value="@$PosTraitsBodybuilder_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFastAdaptation" />
+				<property name="values" value="@$PosTraitsFastAdaptation_Current" />
+			</action>
+			
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkHardening" />
+				<property name="values" value="@$PosTraitsHardening_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCharismatic" />
+				<property name="values" value="@$PosTraitsCharismatic_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkLuckyGuy" />
+				<property name="values" value="@$PosTraitsLuckyGuy_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkJackOfAllTrades" />
+				<property name="values" value="@$PosTraitsJackOfAllTrades_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkExperiencedHunter" />
+				<property name="values" value="@$PosTraitsExperiencedHunter_Current" />
+			</action>
+			
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCrusher" />
+				<property name="values" value="@$PosTraitsCrusher_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearless" />
+				<property name="values" value="@$PosTraitsFearless_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkVeteranWasteland" />
+				<property name="values" value="@$PosTraitsVeteranWasteland_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSchumacher" />
+				<property name="values" value="@$PosTraitsSchumacher_Current" />
+			</action>
+			<action class="ModifyProgression">
+				<property name="phase" value="2" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkTeamPlayer" />
+				<property name="values" value="@$PosTraitsTeamPlayer_Current" />
+			</action>
+			
+		</action_sequence>
+		
+		<action_sequence name="RecoverPerksSelfTraits">
+			
+			<!-- Adding -->
+			<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+			<!-- NEGATIVE -->
+			
+			<!-- Dementia -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDementia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDementia" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyCVar">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDementia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="cvar" value="$BooksReadWorse1" />
+				<property name="operation" value="set" />
+				<property name="value" value="@$BooksReadWorse1_Current" />
+			</action>
+			
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDementia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDementia" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyCVar">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDementia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="cvar" value="$BooksReadWorse2" />
+				<property name="operation" value="set" />
+				<property name="value" value="@$BooksReadWorse2_Current" />
+			</action>
+			
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDementia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDementia" />
+				<property name="values" value="3" />
+			</action>
+			<action class="ModifyCVar">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDementia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="cvar" value="$BooksReadWorse3" />
+				<property name="operation" value="set" />
+				<property name="value" value="@$BooksReadWorse3_Current" />
+			</action>
+			
+			<!-- Obesity -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkObesity_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkObesity" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkObesity_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkObesity" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkObesity_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkObesity" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Distrophia -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDistrophia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDistrophia" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDistrophia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDistrophia" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkDistrophia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkDistrophia" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Alarmism -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAlarmism_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAlarmism" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAlarmism_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAlarmism" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAlarmism_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAlarmism" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- BrittleBones -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkBrittleBones_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBrittleBones" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkBrittleBones_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBrittleBones" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkBrittleBones_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBrittleBones" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Weakling -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkWeakling_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakling" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkWeakling_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakling" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkWeakling_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakling" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- AllergySufferer -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAllergySufferer_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAllergySufferer" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAllergySufferer_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAllergySufferer" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAllergySufferer_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAllergySufferer" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- WeakImmunity -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkWeakImmunity_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakImmunity" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkWeakImmunity_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakImmunity" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkWeakImmunity_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkWeakImmunity" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Clumsy -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkClumsy_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkClumsy" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkClumsy_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkClumsy" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkClumsy_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkClumsy" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Pacifist -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkPacifist_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkPacifist" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkPacifist_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkPacifist" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkPacifist_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkPacifist" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- FearDark -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearDark_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearDark" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearDark_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearDark" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearDark_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearDark" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- FearAnimals -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearAnimals_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearAnimals" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearAnimals_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearAnimals" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearAnimals_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearAnimals" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- FearZombie -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearZombie_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearZombie" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearZombie_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearZombie" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearZombie_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearZombie" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- FearFire -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearFire_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearFire" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearFire_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearFire" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearFire_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearFire" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- SocialPhobia -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkSocialPhobia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSocialPhobia" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkSocialPhobia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSocialPhobia" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkSocialPhobia_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSocialPhobia" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Unlucker -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkUnlucker_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkUnlucker" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkUnlucker_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkUnlucker" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkUnlucker_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkUnlucker" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- POSITIVE -->
+			
+			<!-- Genius -->
+			<action class="ModifyCVar">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkGenius_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="0" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="cvar" value="$BooksReadBetter0" />
+				<property name="operation" value="set" />
+				<property name="value" value="@$BooksReadBetter0_Current" />
+			</action>
+			
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkGenius_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkGenius" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyCVar">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkGenius_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="cvar" value="$BooksReadBetter1" />
+				<property name="operation" value="set" />
+				<property name="value" value="@$BooksReadBetter1_Current" />
+			</action>
+			
+			
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkGenius_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkGenius" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyCVar">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkGenius_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="cvar" value="$BooksReadBetter2" />
+				<property name="operation" value="set" />
+				<property name="value" value="@$BooksReadBetter2_Current" />
+			</action>
+			
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkGenius_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkGenius" />
+				<property name="values" value="3" />
+			</action>
+			<action class="ModifyCVar">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkGenius_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="cvar" value="$BooksReadBetter3" />
+				<property name="operation" value="set" />
+				<property name="value" value="@$BooksReadBetter3_Current" />
+			</action>
+			
+			<!-- AthleticBuild -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAthleticBuild_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAthleticBuild" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAthleticBuild_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAthleticBuild" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkAthleticBuild_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkAthleticBuild" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Courage -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCourage_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCourage" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCourage_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCourage" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCourage_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCourage" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Bodybuilder -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkBodybuilder_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBodybuilder" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkBodybuilder_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBodybuilder" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkBodybuilder_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkBodybuilder" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- FastAdaptation -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFastAdaptation_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFastAdaptation" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFastAdaptation_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFastAdaptation" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFastAdaptation_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFastAdaptation" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Hardening -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkHardening_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkHardening" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkHardening_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkHardening" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkHardening_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkHardening" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Charismatic -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCharismatic_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCharismatic" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCharismatic_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCharismatic" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCharismatic_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCharismatic" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- LuckyGuy -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkLuckyGuy_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkLuckyGuy" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkLuckyGuy_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkLuckyGuy" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkLuckyGuy_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkLuckyGuy" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- JackOfAllTrades -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkJackOfAllTrades_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkJackOfAllTrades" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkJackOfAllTrades_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkJackOfAllTrades" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkJackOfAllTrades_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkJackOfAllTrades" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- ExperiencedHunter -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkExperiencedHunter_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkExperiencedHunter" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkExperiencedHunter_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkExperiencedHunter" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkExperiencedHunter_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkExperiencedHunter" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Crusher -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCrusher_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCrusher" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCrusher_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCrusher" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkCrusher_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkCrusher" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Fearless -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearless_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearless" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearless_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearless" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkFearless_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkFearless" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- VeteranWasteland -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkVeteranWasteland_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkVeteranWasteland" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkVeteranWasteland_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkVeteranWasteland" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkVeteranWasteland_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkVeteranWasteland" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- Schumacher -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkSchumacher_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSchumacher" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkSchumacher_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSchumacher" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkSchumacher_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkSchumacher" />
+				<property name="values" value="3" />
+			</action>
+			
+			<!-- TeamPlayer -->
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkTeamPlayer_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="1" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkTeamPlayer" />
+				<property name="values" value="1" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkTeamPlayer_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="2" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkTeamPlayer" />
+				<property name="values" value="2" />
+			</action>
+			<action class="ModifyProgression">
+				<requirement class="CVar">
+					<property name="cvar" value="$perkTeamPlayer_Current"/>
+					<property name="operation" value="Equals" />
+					<property name="value" value="3" />
+				</requirement>
+				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Add" />
+				<property name="progression_names" value="perkTeamPlayer" />
+				<property name="values" value="3" />
+			</action>
+			
+		</action_sequence>
+		
+		<action_sequence name="setPerkDementia0">
+			<action class="ModifyProgression">				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkDementia" />
+				<property name="values" value="0" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="setPerkDementia1">
+			<action class="ModifyProgression">				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkDementia" />
+				<property name="values" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="setPerkDementia2">
+			<action class="ModifyProgression">				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkDementia" />
+				<property name="values" value="2" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="setPerkGenius1">
+			<action class="ModifyProgression">				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkGenius" />
+				<property name="values" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="setPerkGenius2">
+			<action class="ModifyProgression">				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkGenius" />
+				<property name="values" value="2" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="setPerkGenius3">
+			<action class="ModifyProgression">				
+				<property name="phase" value="1" />
+				<property name="modify_type" value="Set" />
+				<property name="progression_names" value="perkGenius" />
+				<property name="values" value="3" />
+			</action>
+		</action_sequence>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Story -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+	<append xpath="/gameevents">
+				
+		<!-- Launching start bleeding buff -->				
+		<action_sequence name="EventStartBleeding">
+
+			<action class="AddBuff">
+				<property name="buff_name" value="buffStartBleeding" />
+				<property name="phase" value="0"/>
+			</action>
+			
+		</action_sequence>
+		
+		<!-- Spawn start zombie -->
+		<action_sequence name="Spawner_startZombie">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="zombieBoe" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="air_spawn" value="true"/>
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="20" param1="mindist" />
+			</action>	
+		</action_sequence>
+	
+	</append>
+	
+</config>
