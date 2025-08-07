@@ -31,7 +31,7 @@
 
 				<label depth="7" name="stackValue" pos="2,-33" width="54" height="28" text="{itemcount}" font_size="20" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
 				<label depth="7" name="timer" pos="35,-33" width="56" height="24" font_size="21" justify="center" pivot="center" effect="outline" color="[beige]"/>
-				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="56" height="56" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="56" height="56" color="255,0,0,255" type="sliced" visible="{# ishovered and islocked}" foregroundlayer="true"/>
 				<sprite depth="13" name="assembleIcon" size="31,31" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="13,-12" foregroundlayer="true" />
 
 				<button name="rectSlotLock" depth="15" style="press, hover" width="61" height="65" visible="{userlockmode}" sprite="" hoverscale="1" use_selection_box="true">
@@ -41,7 +41,7 @@
 			</rect>
 		</backpack_item_stack>
 	</insertAfter>
-
+	
 	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 	<!-- Z_HUD -->
@@ -51,10 +51,11 @@
 	<remove xpath="controls/item_stack"/>
 	
 	<insertAfter xpath="controls/unlocked_by_row">
+	
 		<item_stack controller="ItemStack" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false">
-			<rect controller="${controller}" style="itemStack, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
-				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
-				<sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/> 
+			<rect controller="${controller}" style="itemStack, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" enabled="{# !defined('userlockmode') or !userlockmode}" visible="{# !defined('container_slots') or (int(${repeat_i}) &lt; int(container_slots)) }" >
+				<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="background" sprite="menu_empty3px" width="73" height="73" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/> 
 				<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[black]" pos="0,0" type="sliced" globalopacity="true"/>
 				<sprite depth="1" name="highlightOverlay" width="72" height="72" color="{selectionbordercolor}" pos="0,0" type="sliced" globalopacity="true"/>
 
@@ -71,11 +72,21 @@
 
 				<label depth="7" name="stackValue" pos="-2,-48" width="70" height="28" text="{itemcount}" font_size="24" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
 				<label depth="7" name="timer" pos="35,-38" width="70" height="22" font_size="22" justify="center" pivot="center" color="[beige]" effect="outline" effect_distance="1,1" effect_color="0,0,0,255"/>
-				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" color="255,0,0,255" type="sliced" visible="{# ishovered and islocked}" foregroundlayer="true"
+					width="70" height="70" />
 				<sprite depth="13" name="assembleIcon" size="40,40" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
-				<sprite depth="14" name="quickswapIcon" size="22,22" sprite="server_refresh" pos="46,-3" foregroundlayer="true" color="[white]"/>
+
+				<sprite depth="14" name="quickswapIcon" size="22,22" sprite="server_refresh" pos="46,-3" foregroundlayer="true" color="[white]" visible="{isQuickSwap}"/>
+
+				<button name="rectSlotLock" depth="15" style="press, hover" width="73" height="73" visible="{# defined('userlockmode') and userlockmode}" sprite="" hoverscale="1" use_selection_box="true">
+					<sprite depth="16" name="slotLockIcon" width="24" height="24" sprite="{# !defined('userlockmode') ? '' : (userlockedslot ? 'ui_game_symbol_lock' : 'ui_game_symbol_unlock') }" pos="50, -14" style="icon32px" pivot="center" color="{# !defined('userlockmode') ? '255,255,255,1' : (userlockedslot ? '222,206,163' : '255,255,255') }" />
+				</button>
+				<sprite depth="15" name="iconSlotLock" width="20" height="20" sprite="ui_game_symbol_lock" pos="50, -14" style="icon32px" pivot="center" visible="{# defined('userlockmode') and !userlockmode and userlockedslot }" color="[lightGrey]" />
 			</rect>
+
 		</item_stack>
+
+		
 	</insertAfter>
 	
 	<remove xpath="controls/party_entry"/>
