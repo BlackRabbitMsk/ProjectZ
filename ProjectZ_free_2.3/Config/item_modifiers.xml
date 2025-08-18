@@ -1,0 +1,2942 @@
+<config>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Game_Balance -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAgility']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStrength']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@installable_tags">armorHands</set>
+
+	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']/@installable_tags">BlockItem</set>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Master_Skills -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']/@blocked_tags">noMods,reactorTools</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']/@blocked_tags">noMods,reactorTools</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']/@blocked_tags">noMods,noBlades,reactorTools</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']/@blocked_tags">noMods,reactorTools</set>
+	
+	<!-- Reflex Sight -->
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunRifleT3SniperRifle']">
+		
+		<item_property_overrides name="gunHandgunT5SMG5Zinger">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT4SMG5Imp">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegArsonist">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegURANUS">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBreeze">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegUnkillable">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegAvenger">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBerserk">
+			<property name="ScopeOffset" value=".0001,.1,-.15"/>
+			<property name="ScopeScale" value=".55,.55,.55"/>
+			<property name="ScopeCameraOffset" value="0,-.0377,0"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunRifleT4SniperRifleImp">
+			<property name="ScopeCameraOffset" value="0,-0.0137,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT5SniperRifleGaus">
+			<property name="ScopeCameraOffset" value="0,-0.0137,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="GausLegArsonist">
+			<property name="ScopeCameraOffset" value="0,-0.0137,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="GausLegTesla">
+			<property name="ScopeCameraOffset" value="0,-0.0137,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="GausLegURANUS">
+			<property name="ScopeCameraOffset" value="0,-0.0137,0"/>
+		</item_property_overrides>
+		<item_property_overrides name="GausLegUnkillable">
+			<property name="ScopeCameraOffset" value="0,-0.0137,0"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunMGT4M60Imp">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT5M60Bulldog">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegArsonist">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegURANUS">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegBreeze">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegUnkillable">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegAvenger">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegBerserk">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,.1"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunShotgunT4AutoShotgunImp">
+			<property name="ScopeCameraOffset" value=".00095,-.019,.10"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunShotgunT5AutoShotgunEraser">
+			<property name="ScopeCameraOffset" value=".00095,-.019,.10"/>
+		</item_property_overrides>
+		<item_property_overrides name="EraserLegArsonist">
+			<property name="ScopeCameraOffset" value=".00095,-.019,.10"/>
+		</item_property_overrides>
+		<item_property_overrides name="EraserLegURANUS">
+			<property name="ScopeCameraOffset" value=".00095,-.019,.10"/>
+		</item_property_overrides>
+		<item_property_overrides name="EraserLegUnkillable">
+			<property name="ScopeCameraOffset" value=".00095,-.019,.10"/>
+		</item_property_overrides>
+		<item_property_overrides name="EraserLegAvenger">
+			<property name="ScopeCameraOffset" value=".00095,-.019,.10"/>
+		</item_property_overrides>
+		<item_property_overrides name="EraserLegBerserk">
+			<property name="ScopeCameraOffset" value=".00095,-.019,.10"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunBowT4CompoundCrossbowImp">
+			<property name="ScopeOffset" value="0,0,-.2"/>
+			<property name="ScopeScale" value=".6,.6,.6"/>
+			<property name="ScopeCameraOffset" value="0,-.007,-.025"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunBowT5CompoundCrossbowMantis">
+			<property name="ScopeOffset" value="0,0,-.2"/>
+			<property name="ScopeScale" value=".6,.6,.6"/>
+			<property name="ScopeCameraOffset" value="0,-.007,-.025"/>
+		</item_property_overrides>
+	</insertAfter>
+	
+	<!-- Laser Sight -->
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/property[@name='TraderStageTemplate']">
+		<item_property_overrides name="gunHandgunT5SMG5Zinger">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT4SMG5Imp">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegArsonist">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegURANUS">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBreeze">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegUnkillable">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegAvenger">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBerserk">
+			<property name="SideOffset" value="0,.0108,.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunMGT5M60Bulldog">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT4M60Imp">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegArsonist">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegURANUS">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegBreeze">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegUnkillable">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegAvenger">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegBerserk">
+			<property name="SideOffset" value="-.0386,.0382,.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+	</insertAfter>
+	
+	<!-- Scope Small -->
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='gunHandgunT3DesertVulture']">
+		<item_property_overrides name="gunBowT4CompoundCrossbowImp">
+			<property name="ScopeOffset" value="0,.092,-.06"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunBowT5CompoundCrossbowMantis">
+			<property name="ScopeOffset" value="0,.092,-.06"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunHandgunT5SMG5Zinger">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT4SMG5Imp">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegArsonist">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegURANUS">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBreeze">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegUnkillable">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegAvenger">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBerserk">
+			<property name="ScopeOffset" value="0,.0999,-.2534"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+	</insertAfter>
+	
+	<!-- Scope Medium -->
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides[@name='gunBowT3CompoundCrossbow']">
+		<item_property_overrides name="gunBowT4CompoundCrossbowImp">
+			<property name="ScopeOffset" value="0,.092,-.06"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunBowT5CompoundCrossbowMantis">
+			<property name="ScopeOffset" value="0,.092,-.06"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+		</item_property_overrides>
+	</insertAfter>
+	
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides[@name='gunBowT3CompoundCrossbow']">
+		<item_property_overrides name="gunBowT4CompoundCrossbowImp">
+			<property name="ScopeOffset" value="0,.061,-.0761"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunBowT5CompoundCrossbowMantis">
+			<property name="ScopeOffset" value="0,.061,-.0761"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+			<property name="zoomTriggerEffectPullDualsense" value="Pistol Trigger"/>
+			<property name="zoomTriggerEffectShootDualsense" value="PistolZoom2"/>
+			<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+		</item_property_overrides>
+	</insertAfter>
+	
+	<!-- Gun Flashlight -->
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/item_property_overrides[@name='gunBowT3CompoundCrossbow']">
+		<item_property_overrides name="gunBowT4CompoundCrossbowImp">
+			<property name="SideOffset" value="0,0,.32"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunBowT5CompoundCrossbowMantis">
+			<property name="SideOffset" value="0,0,.32"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunHandgunT5SMG5Zinger">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT4SMG5Imp">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegArsonist">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegURANUS">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBreeze">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegUnkillable">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegAvenger">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+		<item_property_overrides name="ZingerLegBerserk">
+			<property name="SideOffset" value="0,.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunMGT5M60Bulldog">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT4M60Imp">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegArsonist">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegURANUS">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegBreeze">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegUnkillable">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegAvenger">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="BulldogLegBerserk">
+			<property name="SideOffset" value="-.0386,.0382,.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+	</insertAfter>
+
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Rare_Modifiers -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorQuadStoragePocket']/property[@name='UnlockedBy']/@value">modArmorQuadStoragePocketSchematic,MasterArmor</set>
+	
+	<set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']/effect_group/passive_effect[@name='VehicleFuelUsePer']/@value">.75</set>
+	
+	<append xpath="/item_modifiers">
+		
+		<!-- Tools modifiers -->
+		
+		<item_modifier name="modMotorBooster" installable_tags="motorTool" modifier_tags="boost" blocked_tags="noMods,reactorTools" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="smallEngine"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modMotorBoosterDesc"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffMotorBooster"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffMotorBooster"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffMotorBooster">
+					<requirement name="HasBuff" buff="buffMotorBooster"/>
+				</triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReactorBooster" installable_tags="reactorTools" modifier_tags="boost" blocked_tags="noMods,salvageTool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modReactorBoosterDesc"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffMotorBooster"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffMotorBooster"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffMotorBooster">
+					<requirement name="HasBuff" buff="buffMotorBooster"/>
+				</triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modIncreasedBattery" installable_tags="reactorTools" modifier_tags="Battery" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="carBattery"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modIncreasedBatteryDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1" tags="perkMiner69r,perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>	
+		
+		<item_modifier name="modIncreasedBatteryUnique" installable_tags="reactorTools" modifier_tags="Battery" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="CustomIcon" value="carBattery"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modIncreasedBatteryUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="2" tags="perkMiner69r,perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReactorElectric" installable_tags="reactorTools" modifier_tags="Electric" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="resourceElectricParts"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modReactorElectricDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.15" tags="perkMiner69r,perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReactorElectricUnique" installable_tags="reactorTools" modifier_tags="Electric" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="CustomIcon" value="resourceElectricParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modReactorElectricUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.3" tags="perkMiner69r,perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modElongatedCore" installable_tags="motorTool,reactorTools" modifier_tags="toolRange" blocked_tags="noMods,salvageTool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="59F5FF"/>
+			<property name="DescriptionKey" value="modElongatedCoreDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MaxRange" operation="base_add" value=".5" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".25" tags="oreWoodHarvest"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.15" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modElongatedCoreUnique" installable_tags="motorTool,reactorTools" modifier_tags="toolRange" blocked_tags="noMods,salvageTool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modElongatedCoreUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MaxRange" operation="base_add" value="1" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".5" tags="oreWoodHarvest"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.25" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReinforcedParts" installable_tags="motorTool,reactorTools" modifier_tags="motorToolDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="meleeToolAxeT3ChainsawParts"/>
+			<property name="CustomIconTint" value="E9653B"/>
+			<property name="DescriptionKey" value="modReinforcedPartsDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="metal"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="wood"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReinforcedPartsUnique" installable_tags="motorTool,reactorTools" modifier_tags="motorToolDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="CustomIcon" value="meleeToolAxeT3ChainsawParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modReinforcedPartsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="metal"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="wood"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modLuckyMining" installable_tags="motorTool,reactorTools" modifier_tags="treasures" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modLuckyMiningDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="modPreciousMetals"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modLuckyMiningUnique" installable_tags="motorTool,reactorTools" modifier_tags="treasures" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modLuckyMiningUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="modPreciousMetalsUnique"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- Salvege modifiers -->
+		
+		<item_modifier name="modEnhancedMechanisms" installable_tags="ImprovedParsing" modifier_tags="HarvestDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="resourceMechanicalParts"/>
+			<property name="CustomIconTint" value="E9653B"/>
+			<property name="DescriptionKey" value="modEnhancedMechanismsDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="BlockDamage" operation="perc_add" value=".25" tags="perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modEnhancedMechanismsUnique" installable_tags="ImprovedParsing" modifier_tags="HarvestDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="CustomIcon" value="resourceMechanicalParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modEnhancedMechanismsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="BlockDamage" operation="perc_add" value=".5" tags="perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modFastMechanisms" installable_tags="ImprovedParsing" modifier_tags="HarvestSpeed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="resourceSpring"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modFastMechanismsDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".25" tags="perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modFastMechanismsUnique" installable_tags="ImprovedParsing" modifier_tags="HarvestSpeed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="CustomIcon" value="resourceSpring"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modFastMechanismsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".5" tags="perkSalvageOperations"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modSpareBox" installable_tags="ImprovedParsing" modifier_tags="HarvestCount" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modRoboticDroneCargoMod"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modSpareBoxDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="perc_add" value=".25" tags="salvageHarvest"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modSpareBoxUnique" installable_tags="ImprovedParsing" modifier_tags="HarvestCount" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="CustomIcon" value="modRoboticDroneCargoMod"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modSpareBoxUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="perc_add" value=".5" tags="salvageHarvest"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- ===================================== -->
+		<!-- ARMOR MODIFIERS -->
+		<!-- ===================================== -->
+		
+		<item_modifier name="modJetPack" installable_tags="armorFeet" modifier_tags="JetPack" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="decoCarMotorFlat"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modJetPackDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">			
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffJetPackReload">
+					<requirement name="CVarCompare" cvar="$buffJetPackReloadDuration" operation="GT" value="0"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$JetPackStatus" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffJetPackBoost">
+					<requirement name="!HasBuff" buff="buffJetPackReload"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$JetPackStatus" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="AddBuff" buff="buffJetPackNormal">
+					<requirement name="!HasBuff" buff="buffJetPackReload"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffJetPackNormal,buffJetPackBoost,buffJetPackReload"/>
+				
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modRadar" installable_tags="armorHead" modifier_tags="radar" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="CustomIcon" value="modArmorNightVision"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRadar"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffRadar"/>
+			</effect_group>
+		</item_modifier>
+		
+		
+		<!-- Enhanced protection plates -->
+		<item_modifier name="modRareArmorARResistHelmet" installable_tags="armorHead" modifier_tags="resistance,thermal" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			
+			<effect_group>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistHelmet" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistHelmet" operation="set" value="0"/>
+				<!-- Add base Rad resist -->
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHeadProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHeadProtect" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHeadImpProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHeadImpProtect" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modRareArmorARResistOutfit" installable_tags="armorChest" modifier_tags="resistance,thermal" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			
+			<effect_group>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistOutfit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistOutfit" operation="set" value="0"/>
+				<!-- Add base Rad resist -->
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorChestProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorChestProtect" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorChestImpProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorChestImpProtect" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modRareArmorARResistGloves" installable_tags="armorHands" modifier_tags="resistance,thermal" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			
+			<effect_group>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistGloves" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistGloves" operation="set" value="0"/>
+				<!-- Add base Rad resist -->
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHandsProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHandsProtect" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHandsImpProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHandsImpProtect" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modRareArmorARResistBoots" installable_tags="armorFeet" modifier_tags="resistance,thermal" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			
+			<effect_group>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistBoots" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistBoots" operation="set" value="0"/>
+				<!-- Add base Rad resist -->
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorFeetProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorFeetProtect" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorFeetImpProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorFeetimpProtect" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- LSS (Life support system) -->
+		<item_modifier name="modArmorLSSHelmet" installable_tags="armorHead" modifier_tags="lss" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="modArmorWaterPurifier"/>
+			<property name="CustomIconTint" value="3DA2FF"/>
+			
+			<effect_group>
+				<passive_effect name="FoodMax" operation="base_add" value="50"/>
+				<passive_effect name="WaterMax" operation="base_add" value="50"/>
+				
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffDysenteryCatchDrink"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffWaterPurifier"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffWaterPurifier"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHeadLSS" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHeadLSS" operation="set" value="0"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StrangulationResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StrangulationResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorLSSOutfit" installable_tags="armorChest" modifier_tags="lss" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="medicalFirstAidKit"/>
+			<property name="CustomIconTint" value="3DA2FF"/>
+			
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_add" value="50"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="bufftreatedLSS"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="bufftreatedLSS"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorChestLSS" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorChestLSS" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorLSSGloves" installable_tags="armorHands" modifier_tags="lss" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="drinkJarPureMineralWater"/>
+			<property name="CustomIconTint" value="3DA2FF"/>
+			
+			<effect_group>
+				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="1,5" value="-.25"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.25"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.25"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHandsLSS" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHandsLSS" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorLSSBoots" installable_tags="armorFeet" modifier_tags="lss" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="modArmorImpactBracing"/>
+			<property name="CustomIconTint" value="3DA2FF"/>
+			
+			<effect_group>
+				<passive_effect name="StaminaMax" operation="base_add" value="50"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffImpactBracing"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffImpactBracing"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorFeetLSS" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorFeetLSS" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorHeadset" installable_tags="armor" modifier_tags="movement" blocked_tags="noMods,lightArmor" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="DisplayType" value="modArmorHeadset"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="CustomIcon" value="modArmorCustomizedFittings"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group>
+				<passive_effect name="Mobility" operation="perc_add" value=".03"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".021" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0562" tags="running"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.1"/>
+				
+				<display_value name="dNoiseMultiplier" value="-.1"/>
+				<display_value name="dStaminaChangeOT" value=".0562"/>
+				<display_value name="dMobility" value=".03"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modBandolierImp" installable_tags="armorChest" modifier_tags="ammo" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="DisplayType" value="BandolierImp"/>
+			<property name="EconomicValue" value="7500"/>
+			<property name="CustomIcon" value="modArmorBandolier"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group>
+				<passive_effect name="CarryCapacity" operation="base_add" value="6"/>
+				<display_value name="dCarryCapacity" value="6"/>
+				<display_value name="dReloadSpeedMultiplier" value=".3"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBandolier"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffBandolier"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modSmartGlass" installable_tags="armorHead" modifier_tags="attributeBoost" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="DisplayType" value="SmartGlass"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="CustomIcon" value="modArmorTreasureHunter"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".15"/>
+				<passive_effect name="LootStage" operation="base_add" value="10"/>
+				<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="-2"/>
+				
+				<display_value name="dPlayerExpGain" value=".15"/>
+				<display_value name="dLootStage" value="10"/>
+				<display_value name="dTreasureBlocksPerReduction" value="-2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modOkGoogle" installable_tags="armorHead" modifier_tags="attributeBoost" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="DisplayType" value="SmartGlass"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="CustomIcon" value="modArmorTreasureHunter"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".2"/>
+				<passive_effect name="LootStage" operation="base_add" value="25"/>
+				<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="-3"/>
+				
+				<display_value name="dPlayerExpGain" value=".2"/>
+				<display_value name="dLootStage" value="25"/>
+				<display_value name="dTreasureBlocksPerReduction" value="-3"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modStabilityBooster" installable_tags="armorFeet" modifier_tags="BossResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="CustomIcon" value="modArmorStealthBoots"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StabilityStatus" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipUpdate" action="ModifyCVar" cvar="$StabilityStatus" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StabilityStatus" operation="set" value="0"/>
+			
+				<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffInjuryKnockdown01">
+					<requirement name="CVarCompare" cvar="$FatigueStatus" operation="GT" value="@$ReserveStrength_5"/></passive_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTerrainResist" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorPreacherBoots"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="EconomicValue" value="5000"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terSnowResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terSandResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terDestrResist" operation="set" value="1"/>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terSnowResist" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terSandResist" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terDestrResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTerrainResistUnique" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorFarmerBoots"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Group" value="RareMods"/>
+			<effect_group tiered="false">
+				<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffDeepSnowStatus,buffSandStatus,buffDesertGroundStatus,buffRoughGroundStatus,buffDestroyedStoneStatus"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modNerdBonusImp" installable_tags="armorChest" modifier_tags="Books" blocked_tags="noMods,NerdBonus" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="armorNerdOutfit"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modNerdBonusImpDesc"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="20">
+					<requirement name="ProgressionLevel" progression_name="perkDementia" operation="Equals" value="3"/></triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="30">
+					<requirement name="ProgressionLevel" progression_name="perkDementia" operation="Equals" value="2"/></triggered_effect>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="35"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="40">
+					<requirement name="ProgressionLevel" progression_name="perkGenius" operation="Equals" value="2"/></triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="50">
+					<requirement name="ProgressionLevel" progression_name="perkGenius" operation="Equals" value="3"/></triggered_effect>
+					
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="add" value="@$perkIntellectMasteryPointChance">
+					<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
+				</triggered_effect>
+					
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="0"/>
+			</effect_group>
+		
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffNerdOutfit"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffNerdOutfit"/>
+			</effect_group>
+				
+		</item_modifier>
+		
+		<item_modifier name="modNerdBonusUnique" installable_tags="armorChest" modifier_tags="Books" blocked_tags="noMods,NerdBonus" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorNerdOutfit"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="20">
+					<requirement name="ProgressionLevel" progression_name="perkDementia" operation="Equals" value="3"/></triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="30">
+					<requirement name="ProgressionLevel" progression_name="perkDementia" operation="Equals" value="2"/></triggered_effect>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="35"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="40">
+					<requirement name="ProgressionLevel" progression_name="perkGenius" operation="Equals" value="2"/></triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="50">
+					<requirement name="ProgressionLevel" progression_name="perkGenius" operation="Equals" value="3"/></triggered_effect>
+					
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="add" value="@$perkIntellectMasteryPointChance">
+					<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="50">
+					<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="2"/></triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="25">
+					<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="LTE" value="1"/></triggered_effect>
+					
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="25">
+					<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="2"/></triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="0">
+					<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="LTE" value="1"/></triggered_effect>
+					
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="0"/>
+			</effect_group>
+		
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffNerdOutfit"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffNerdOutfit"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReliableWinding" installable_tags="armorHands" modifier_tags="BossResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterArmor"/>
+			<property name="CustomIcon" value="meleeWpnKnucklesT0LeatherKnuckles"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group>
+				<passive_effect name="BuffResistance" operation="base_set" value="1" tags="BuffBossesDropItem"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- ADMIN TEST MOD -->
+		<item_modifier name="modMaxHP" installable_tags="armor" modifier_tags="JetPack" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="medicalBandage"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="DescriptionKey" value="modJetPackDesc"/>
+			
+			<effect_group tiered="false">			
+				<passive_effect name="HealthMax" operation="base_set" value="25000"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$AcRadGod" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$AcRadGod" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+				
+		<!-- ===================================== -->
+		<!-- RANGE WEAPON'S MODIFIERS -->
+		<!-- ===================================== -->			
+		<item_modifier name="modGunDrumMagazineExtenderImp" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunDrumMagazineExtenderImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingMachineGuns"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="1.5"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunDrumMagazineExtenderUnique" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingMachineGuns"/>
+			<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunDrumMagazineExtenderUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="2"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunMagazineExtenderImp" installable_tags="magazine,turretRanged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunMagazineExtender"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunMagazineExtenderImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingHandguns"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".1"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunMagazineExtenderUnique" installable_tags="magazine,turretRanged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingHandguns"/>
+			<property name="CustomIcon" value="modGunMagazineExtender"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunMagazineExtenderUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="1.5"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".2"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".50"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunMeleeRadRemoverImp" installable_tags="weapon,ranged" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunMeleeRadRemover"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunMeleeRadRemoverImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingHandguns"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+					<requirement name="EntityTagCompare" target="other" tags="radiated"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".20">
+					<requirement name="EntityTagCompare" target="other" tags="charged"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="EntityTagCompare" target="other" tags="infernal"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="EntityTagCompare" target="other" tags="elite"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".05">
+					<requirement name="EntityTagCompare" target="other" tags="miniboss"/>
+				</passive_effect>
+			</effect_group>
+			
+				<!-- Increases damage against irradiated enemies, all melee only -->
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock">
+					<requirement name="EntityTagCompare" target="other" tags="radiated,charged,infernal,elite"/></triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffAllRegenBlock1">
+					<requirement name="EntityTagCompare" target="other" tags="smallboss,miniboss,boss"/></triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunMeleeRadRemoverUnique" installable_tags="weapon,ranged" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingHandguns"/>
+			<property name="CustomIcon" value="modGunMeleeRadRemover"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunMeleeRadRemoverUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="EntityTagCompare" target="other" tags="radiated"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+					<requirement name="EntityTagCompare" target="other" tags="charged"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".20">
+					<requirement name="EntityTagCompare" target="other" tags="infernal"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="EntityTagCompare" target="other" tags="elite"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".10">
+					<requirement name="EntityTagCompare" target="other" tags="miniboss"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".05">
+					<requirement name="EntityTagCompare" target="other" tags="boss"/>
+				</passive_effect>
+			</effect_group>
+			
+				<!-- Increases damage against irradiated enemies, all melee only -->
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock">
+					<requirement name="EntityTagCompare" target="other" tags="radiated,charged,infernal,elite"/></triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffAllRegenBlock1">
+					<requirement name="EntityTagCompare" target="other" tags="smallboss,miniboss,boss"/></triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunCrippleEmImp" installable_tags="ranged" modifier_tags="crippling" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunCrippleEm"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunCrippleEmImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingShotgun"/>
+			
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="!HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,800" operation="LTE" value="40"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffReducedDamageResistance1"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunCrippleEmUnique" installable_tags="ranged" modifier_tags="crippling" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingShotgun"/>
+			<property name="CustomIcon" value="modGunCrippleEm"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunCrippleEmUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="!HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,800" operation="LTE" value="60"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffReducedDamageResistance2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunForegripImp" installable_tags="bottomAttachments,turretRanged" modifier_tags="grips" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunForegrip"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunForegripImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingShotgun"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.25"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.25"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.12">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.8"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.8"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.8"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.8"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunForegripUnique" installable_tags="bottomAttachments,turretRanged" modifier_tags="grips" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingShotgun"/>
+			<property name="CustomIcon" value="modGunForegrip"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunForegripUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.4"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.4"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.4"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.2">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-1.2"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-1.2"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-1.2"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-1.2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunBipodImp" installable_tags="bottomAttachments" modifier_tags="accuracy" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunBipod"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunBipodImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.14"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.16">
+					<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".8"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".8"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.8"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".6">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunBipodUnique" installable_tags="bottomAttachments,turretRanged" modifier_tags="accuracy" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			<property name="CustomIcon" value="modGunBipod"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunBipodUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.28"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.32">
+					<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".16"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".16"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.12"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".9">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunSoundSuppressorSilencerImp" installable_tags="gun" modifier_tags="barrelAttachment" blocked_tags="noMods,noSilencer" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunSoundSuppressorSilencer"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunSoundSuppressorSilencerImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			<!--Decreases sound footprint by x% -->
+			<item_property_overrides name="*">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT0PipePistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT1Pistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="BarrelOffset" value="0,-.006,.127"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3SMG5">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT4SMG5Imp">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT5SMG5Zinger">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT2Magnum44">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,.028,.165"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3DesertVulture">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT1DoubleBarrel">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT2PumpShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT3AutoShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT4AutoShotgunImp">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT5AutoShotgunEraser">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT1HuntingRifle">
+				<property name="Sound_start" value="hunting_rifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.009,.551"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT2LeverActionRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT3SniperRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunRifleT4SniperRifleImp">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunRifleT5SniperRifleGaus">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT1AK47">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="-.001,-.0197,.3197"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT2TacticalAR">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="0,.005,.275"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT3M60">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT4M60Imp">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT5M60Bulldog">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT0PipeMachineGun">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+			</item_property_overrides>
+
+			<!-- visible attachment: silencer -->
+			<effect_group tiered="false" name="internal attachment prefab (A19)">
+				<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer"/>
+			</effect_group>
+
+			<effect_group tiered="false" name="mod effects">
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.15">
+					<requirement name="ProgressionLevel" progression_name="perkUrbanCombatComplete" operation="LT" value="1"/>
+				</passive_effect>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="-.1"/>
+
+			</effect_group>
+			<effect_group name="sneak damage bonus" tiered="false">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+					<passive_effect name="DamageBonus" operation="base_add" value=".5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+			</effect_group>
+			
+		</item_modifier>
+		
+		<item_modifier name="modGunSoundSuppressorSilencerUnique" installable_tags="gun" modifier_tags="barrelAttachment" blocked_tags="noMods,noSilencer" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			<property name="CustomIcon" value="modGunSoundSuppressorSilencer"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunSoundSuppressorSilencerUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			<!--Decreases sound footprint by x% -->
+			<item_property_overrides name="*">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT0PipePistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT1Pistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="BarrelOffset" value="0,-.006,.127"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3SMG5">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT4SMG5Imp">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunHandgunT5SMG5Zinger">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT2Magnum44">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,.028,.165"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3DesertVulture">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT1DoubleBarrel">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT2PumpShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT3AutoShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT4AutoShotgunImp">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunShotgunT5AutoShotgunEraser">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT1HuntingRifle">
+				<property name="Sound_start" value="hunting_rifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.009,.551"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT2LeverActionRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT3SniperRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunRifleT4SniperRifleImp">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunRifleT5SniperRifleGaus">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT1AK47">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="-.001,-.0197,.3197"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT2TacticalAR">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="0,.005,.275"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT3M60">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT4M60Imp">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+			<item_property_overrides name="gunMGT5M60Bulldog">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT0PipeMachineGun">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+			</item_property_overrides>
+
+			<!-- visible attachment: silencer -->
+			<effect_group tiered="false" name="internal attachment prefab (A19)">
+				<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer"/>
+			</effect_group>
+
+			<effect_group tiered="false" name="mod effects">
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.15">
+					<requirement name="ProgressionLevel" progression_name="perkUrbanCombatComplete" operation="LT" value="1"/>
+				</passive_effect>
+			</effect_group>
+			
+			<effect_group name="sneak damage bonus" tiered="false">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+					<passive_effect name="DamageBonus" operation="base_add" value="1.5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="1.5"/>
+			</effect_group>
+			
+		</item_modifier>
+
+		<item_modifier name="modGunBoosterExp" installable_tags="machinegunSkill,BoosterRange" modifier_tags="booster" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+			<property name="CustomIconTint" value="FF6666"/>
+			<property name="DescriptionKey" value="modGunBoosterExpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingMachineGuns"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffGunBooster1"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffGunBooster1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffGunBooster1">
+					<requirement name="HasBuff" buff="buffGunBooster1"/>
+				</triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunBoosterUnique" installable_tags="machinegunSkill,BoosterRange" modifier_tags="booster" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingMachineGuns"/>
+			<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunBoosterUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffGunBooster2"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="buffGunBooster2"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffGunBooster2">
+					<requirement name="HasBuff" buff="buffGunBooster2"/>
+				</triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunDamageAccumulatorExp" installable_tags="rifleSkill" modifier_tags="accumulator" blocked_tags="noMods,shortRange" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunTriggerGroupSemi"/>
+			<property name="CustomIconTint" value="FF6666"/>
+			<property name="DescriptionKey" value="modGunDamageAccumulatorExpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffGunDAc1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffGunDAc1">
+					<requirement name="HasBuff" buff="buffGunDAc1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffGunDAcShot1">
+					<requirement name="HasBuff" buff="buffGunDAcShot1"/>
+				</triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunDamageAccumulatorUnique" installable_tags="rifleSkill" modifier_tags="accumulator" blocked_tags="noMods,shortRange" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			<property name="CustomIcon" value="modGunTriggerGroupSemi"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunDamageAccumulatorUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffGunDAc2"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffGunDAc2">
+					<requirement name="HasBuff" buff="buffGunDAc2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffGunDAcShot2">
+					<requirement name="HasBuff" buff="buffGunDAcShot2"/>
+				</triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- Weapons Parts -->
+		<item_modifier name="modGunRiflePartsImp" installable_tags="rifleSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="gunRifleT1HuntingRifleParts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunRiflePartsImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1.2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunRiflePartsUnique" installable_tags="rifleSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingRifle"/>
+			<property name="CustomIcon" value="gunRifleT1HuntingRifleParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunRiflePartsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="2.4"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunPistolPartsImp" installable_tags="handgunSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="gunHandgunT1PistolParts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunPistolPartsImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingHandguns"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1.2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunPistolPartsUnique" installable_tags="handgunSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingHandguns"/>
+			<property name="CustomIcon" value="gunHandgunT1PistolParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunPistolPartsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="2.4"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunM60PartsImp" installable_tags="machinegunSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="gunMGT1AK47Parts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunM60PartsImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingMachineGuns"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1.2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunM60PartsUnique" installable_tags="machinegunSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingMachineGuns"/>
+			<property name="CustomIcon" value="gunMGT1AK47Parts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunM60PartsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="2.4"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunShotgunPartsImp" installable_tags="shotgunSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrelParts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modGunShotgunPartsImpDesc"/>
+			<property name="UnlockedBy" value="MasterCraftingShotgun"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1.2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modGunShotgunPartsUnique" installable_tags="shotgunSkill" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterCraftingShotgun"/>
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrelParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modGunShotgunPartsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="2.4"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+			</effect_group>
+		</item_modifier>
+		
+		
+		<!-- ===================================== -->
+		<!-- MELEE WEAPON'S MODIFIERS -->
+		<!-- ===================================== -->
+		
+		<item_modifier name="modSurgicalBlade" installable_tags="knife,machete,axe,shovel,perkBrawler,perkJavelinMaster" modifier_tags="butcher" blocked_tags="noMods,noBlades" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="UnlockedBy" value="modSurgicalBladeSchematic"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modMeleeSerratedBlade"/>
+			<property name="CustomIconTint" value="59F5FF"/>
+			<property name="DescriptionKey" value="modSurgicalBladeDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="perc_add" value=".2" tags="butcherHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="butcherHarvestMutation"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modSurgicalBladeUnique" installable_tags="knife,machete,axe,shovel,perkBrawler,perkJavelinMaster" modifier_tags="butcher" blocked_tags="noMods,noBlades" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterTools"/>
+			<property name="CustomIcon" value="modMeleeSerratedBlade"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modSurgicalBladeUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="perc_add" value=".4" tags="butcherHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="2" tags="butcherHarvestMutation"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeDimondPartsHeavy" installable_tags="perkSkullCrusher,perkPummelPete,perkJavelinMaster" modifier_tags="durability" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="UnlockedBy" value="MasterHeavyMeleeWeapon"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="CustomIcon" value="meleeWpnSpearT3SteelSpearParts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modMeleeDimondPartsHeavyDesc"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value=".75" tags="perkSkullCrusher,perkPummelPete,perkJavelinMaster,admin"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeDimondPartsHeavyUnique" installable_tags="perkSkullCrusher,perkPummelPete,perkJavelinMaster" modifier_tags="durability" blocked_tags="noMods.tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterHeavyMeleeWeapon"/>
+			<property name="CustomIcon" value="meleeWpnSpearT3SteelSpearParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modMeleeDimondPartsHeavyUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1.5" tags="perkSkullCrusher,perkPummelPete,perkJavelinMaster,admin"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeDimondPartsLight" installable_tags="perkBrawler,perkDeepCuts,perkElectrocutioner" modifier_tags="durability" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="UnlockedBy" value="MasterLightMeleeWeapon"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modMeleeDimondPartsLightDesc"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value=".75" tags="perkBrawler,perkDeepCuts,admin"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeDimondPartsLightUnique" installable_tags="perkBrawler,perkDeepCuts,perkElectrocutioner" modifier_tags="durability" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="UnlockedBy" value="MasterLightMeleeWeapon"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterLightMeleeWeapon"/>
+			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modMeleeDimondPartsLightUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1.5" tags="perkBrawler,perkDeepCuts,admin"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeErgonomicGripImp" installable_tags="melee" modifier_tags="health" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="UnlockedBy" value="MasterLightMeleeWeapon"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modMeleeErgonomicGrip"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modMeleeErgonomicGripImpDesc"/>
+
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3"/>
+					<passive_effect name="StaminaLoss" operation="perc_add" value="-.15" tags="primary"/>
+					<passive_effect name="StaminaLoss" operation="perc_add" value="-.3" tags="secondary"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeErgonomicGripUnique" installable_tags="melee" modifier_tags="health" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterLightMeleeWeapon"/>
+			<property name="CustomIcon" value="modMeleeErgonomicGrip"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modMeleeErgonomicGripUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value=".5"/>
+					<passive_effect name="StaminaLoss" operation="perc_add" value="-.25" tags="primary"/>
+					<passive_effect name="StaminaLoss" operation="perc_add" value="-.5" tags="secondary"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeTheHunterImp" installable_tags="melee" modifier_tags="specialDamage" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="UnlockedBy" value="MasterHeavyMeleeWeapon"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modGunMeleeTheHunter"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modMeleeTheHunterImpDesc"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="EntityTagCompare" target="other" tags="animal"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+					<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".20">
+					<requirement name="EntityTagCompare" target="other" tags="charged"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="EntityTagCompare" target="other" tags="infernal"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="EntityTagCompare" target="other" tags="elite"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".05">
+					<requirement name="EntityTagCompare" target="other" tags="smallboss,miniboss"/>
+				</passive_effect>
+			</effect_group>
+			
+				<!-- Increases damage against irradiated enemies, all melee only -->
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock">
+					<requirement name="EntityTagCompare" target="other" tags="radiated,charged,infernal,elite"/></triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffAllRegenBlock1">
+					<requirement name="EntityTagCompare" target="other" tags="smallboss,miniboss,boss"/></triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeTheHunterUnique" installable_tags="melee" modifier_tags="specialDamage" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterHeavyMeleeWeapon"/>
+			<property name="CustomIcon" value="modGunMeleeTheHunter"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modMeleeTheHunterUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1">
+					<requirement name="EntityTagCompare" target="other" tags="animal"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="EntityTagCompare" target="other" tags="radiated,charged"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+					<requirement name="EntityTagCompare" target="other" tags="infernal,elite"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="EntityTagCompare" target="other" tags="smallboss,miniboss,boss"/>
+				</passive_effect>
+			</effect_group>
+			
+				<!-- Increases damage against irradiated enemies, all melee only -->
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock">
+					<requirement name="EntityTagCompare" target="other" tags="radiated,charged,infernal,elite"/></triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffAllRegenBlock1">
+					<requirement name="EntityTagCompare" target="other" tags="smallboss,miniboss,boss"/></triggered_effect>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeTerribleSpikesImp" installable_tags="melee" modifier_tags="damage" blocked_tags="noMods,roboticsSkill,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="UnlockedBy" value="MasterHeavyMeleeWeapon"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modMeleeClubMetalSpikes"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modMeleeTerribleSpikesImpDesc"/>
+
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+			</effect_group>
+			
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffWeaponBleeding"/>
+			</effect_group>
+			
+		</item_modifier>
+		
+		<item_modifier name="modMeleeTerribleSpikesUnique" installable_tags="melee" modifier_tags="damage" blocked_tags="noMods,roboticsSkill,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterHeavyMeleeWeapon"/>
+			<property name="CustomIcon" value="modMeleeClubMetalSpikes"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modMeleeTerribleSpikesUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+					<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+			</effect_group>
+			
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffWeaponBleeding"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modMeleeClubBurningUnique" installable_tags="longShaft" modifier_tags="fire" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterLightMeleeWeapon"/>
+			<property name="CustomIcon" value="modMeleeClubBurningShaft"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modMeleeClubBurningUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+
+			<item_property_overrides name="*">
+				<property name="LightValue" value=".25"/> <!-- has no effect on a mod -->
+				<property name="LightSource" value="lightSource"/>
+				<property name="ActivateObject" value="lightSource"/>
+				<property name="AlwaysActive" value="true"/>
+				<property name="FlameEffect" value="@:ItemModEffects/mod_flame_defaultPrefab.prefab"/>
+				<property name="MatEmission" value="1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnClubT1BaseballBat">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_bat_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeToolRepairT1ClawHammer">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_hammer_firePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnSledgeT1IronSledgehammer">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_sledge_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnSledgeT0StoneSledgehammer">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_stone_sledge_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnClubT3SteelClub">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_club_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeToolRepairT0StoneAxe">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_stone_axe_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeToolAxeT1IronFireaxe">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_fireaxe_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeToolAxeT2SteelAxe">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_steel_axe_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnSpearT0StoneSpear">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_spear_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnSpearT1IronSpear">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_spear_iron_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnSpearT3SteelSpear">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_spear_steel_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunBotT1JunkSledge">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_junk_sledge_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeWpnBladeT3Machete">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_machete_flamePrefab.prefab"/>
+			</item_property_overrides>
+
+			<effect_group tiered="false" name="SpecialEffects">
+				<passive_effect name="LightMultiplier" operation="base_add" value=".28"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="4">
+					<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
+				</passive_effect>
+			</effect_group>
+
+			<effect_group name="light/douse torch always" tiered="false">
+				<triggered_effect trigger="onSelfWaterSurface" action="AddPart" part="Flames" prefab="property?FlameEffect" parentTransform="#HeldItemRoot"/>
+				<triggered_effect trigger="onSelfWaterSubmerge" action="RemovePart" part="Flames"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Flames"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePart" part="Flames"/>
+			</effect_group>
+
+			<effect_group name="light torch" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
+					<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Flames" prefab="property?FlameEffect" parentTransform="#HeldItemRoot"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AddPart" part="Flames" prefab="property?FlameEffect" parentTransform="#HeldItemRoot"/>
+					<triggered_effect trigger="onSelfHoldingItemThrown" action="AddPart" part="Flames" prefab="property?FlameEffect" parentTransform="#HeldItemRoot"/>
+					<triggered_effect trigger="onSelfHoldingItemThrown" action="AttachPrefabToHeldItem" prefab="property?FlameEffect"/>
+					<triggered_effect trigger="onSelfSwimStop" action="AddPart" part="Flames" prefab="property?FlameEffect" parentTransform="#HeldItemRoot"/>
+			</effect_group>
+
+			<effect_group name="new Fire Proc" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+					<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+						<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+						<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>
+
+			<effect_group name="always refresh existing Fire Proc" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+					<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+					<!--default duration is 10-->
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+						<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="modMeleeElectroUnique" installable_tags="melee" modifier_tags="electric" blocked_tags="noMods,tool" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<property name="CustomIcon" value="electricfencepost"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modMeleeElectroUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+					<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+			</effect_group>
+			
+		</item_modifier>
+		
+		<!-- ===================================== -->
+		<!-- TURETS MODIFIERS -->
+		<!-- ===================================== -->
+		
+		<!-- Weapons Parts -->
+		<item_modifier name="modTurretPartsImp" installable_tags="DegTurrets" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="gunBotRoboticsParts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modTurretPartsImpDesc"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="1"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTurretPartsUnique" installable_tags="DegTurrets" modifier_tags="degradation" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			<property name="CustomIcon" value="gunBotRoboticsParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modTurretPartsUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReactorAmplifierImp" installable_tags="ReactorSledge" modifier_tags="RoundsPerMinute" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modReactorAmplifierImpDesc"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5"/>
+			</effect_group>
+		</item_modifier>
+				
+		<item_modifier name="modReactorAmplifierUnique" installable_tags="ReactorSledge" modifier_tags="RoundsPerMinute" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+			<property name="CustomIconTint" value="00FFE1"/>
+			<property name="DescriptionKey" value="modReactorAmplifierUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="1"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ReactorAmplifierUnique" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ReactorAmplifierUnique" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modHeavyTipImp" installable_tags="ReactorSledge" modifier_tags="Damage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modHeavyTipImpDesc"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+			</effect_group>
+		</item_modifier>
+				
+		<item_modifier name="modHeavyTipUnique" installable_tags="ReactorSledge" modifier_tags="Damage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modHeavyTipUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modHugeSupplyImp" installable_tags="JunkTurretImp" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="CustomIcon" value="ammoJunkTurretShell"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="DescriptionKey" value="modHugeSupplyImpDesc"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="2"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.3"/>
+			</effect_group>
+		</item_modifier>
+				
+		<item_modifier name="modHugeSupplyUnique" installable_tags="JunkTurretImp" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="MasterRobotics"/>
+			<property name="CustomIcon" value="ammoJunkTurretShell"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="modHugeSupplyUniqueDesc"/>
+			<property name="Group" value="RareMods"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="5"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.6"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- ===================================== -->
+		<!-- VEHICLE MODIFIERS -->
+		<!-- ===================================== -->
+		
+		<!-- Super Charger -->
+		<item_modifier name="modVehicleSuperChargerImp" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<property name="CustomIcon" value="modVehicleSuperCharger"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="3500"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".24"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".36"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modVehicleSuperChargerUnique" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modVehicleSuperCharger"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<property name="Group" value="RareMods"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".6"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".9"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modReactorAcceleratorExp" installable_tags="GyroCharger" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+			<property name="CustomIconTint" value="FF6666"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Group" value="RareMods"/>
+			<property name="UnlockedBy" value="MasterElectrician"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value="2.4"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value="3.6"/>
+				<passive_effect name="VehicleFuelUsePer" operation="perc_add" value=".5"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- Fuel consumption and fuel reserve -->
+		<item_modifier name="modVehicleFuelSaverImp" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<property name="CustomIcon" value="modVehicleFuelSaver"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="3500"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleFuelUsePer" operation="perc_set" value=".5"/>
+			</effect_group>
+		</item_modifier>
+	
+		<item_modifier name="modVehicleReserveFuelTankImp" installable_tags="vfuel" modifier_tags="fueltank" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="3500"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="2"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modVehicleFuelSystemUnique" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<property name="Group" value="RareMods"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleFuelUsePer" operation="perc_set" value=".25"/>
+				<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="3"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modVehiclePlowUnique" installable_tags="vplow" modifier_tags="plow" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modVehiclePlow"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleEntityDamage" operation="perc_add" value="3"/>
+				<passive_effect name="VehicleBlockDamage" operation="perc_add" value="3"/>
+				<passive_effect name="VehicleStrongSelfDamage" operation="perc_set" value=".05"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modVehicleArmorImp" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modVehicleArmor"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="3500"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleEntityDamage" operation="perc_add" value="2"/>
+				<passive_effect name="VehicleBlockDamage" operation="perc_add" value="2"/>
+				<passive_effect name="VehicleStrongSelfDamage" operation="perc_set" value=".15"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modVehicleArmorUnique" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modVehicleArmor"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="Material" value="MUniqueParts"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="masterVehicle"/>
+			<property name="Group" value="RareMods"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleEntityDamage" operation="perc_add" value="3"/>
+				<passive_effect name="VehicleBlockDamage" operation="perc_add" value="3"/>
+				<passive_effect name="VehicleStrongSelfDamage" operation="perc_set" value=".15"/>
+			</effect_group>
+		</item_modifier>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_RoughTerrain -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/item_modifiers">
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN RESIST MODIFIERS -->
+		<!-- ===================================== -->
+		
+		<item_modifier name="modSnowResist" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorPreacherBoots"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="600"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terSnowResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terSnowResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modSandResist" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorLumberjackBoots"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="600"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terSandResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terSandResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modDesrtResist" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorRaiderBoots"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="600"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terDestrResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terDestrResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_SelfTraits -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		
+		<effect_group tiered="false" name="perkFearDark">
+			<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$GunFlashlightOn" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$GunFlashlightOn" operation="set" value="0"/>
+		</effect_group>
+		
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']">
+		
+		<effect_group tiered="false" name="perkFearDark">
+			<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$NightVisionOn" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$NightVisionOn" operation="set" value="0"/>
+		</effect_group>
+		
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']">
+		
+		<effect_group tiered="false" name="perkFearDark">
+			<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$HelmetLightOn" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$HelmetLightOn" operation="set" value="0"/>
+		</effect_group>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Vulnerability -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	 <append xpath="/item_modifiers">
+		
+		<!-- OLD Need delete -->
+		<!-- Strangulation resist -->
+		<item_modifier name="modWetBandage" installable_tags="armorHead" modifier_tags="resistance_burnt" type="attachment">
+		
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="ItemTypeIcon" value="oxygen"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="CustomIcon" value="medicalBandage"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StrangulationResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StrangulationResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- Rad resist -->
+		<item_modifier name="modArmorARResistHelmet" installable_tags="armorHead" modifier_tags="resistance" type="attachment">
+		
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FF6666"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHeadProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHeadProtect" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorAROutfit" installable_tags="armorChest" modifier_tags="resistance" type="attachment">
+		
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FF6666"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorChestProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorChestProtect" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorARGloves" installable_tags="armorHands" modifier_tags="resistance" type="attachment">
+		
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FF6666"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHandsProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHandsProtect" operation="set" value="0"/>
+			</effect_group>
+		
+		</item_modifier>
+		<item_modifier name="modArmorARBoots" installable_tags="armorFeet" modifier_tags="resistance" type="attachment">
+		
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="ItemTypeIcon" value="radiation"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
+			<property name="CustomIconTint" value="FF6666"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorFeetProtect" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorFeetProtect" operation="set" value="0"/>
+			</effect_group>
+		
+		</item_modifier>
+		
+	</append>
+		
+</config>
