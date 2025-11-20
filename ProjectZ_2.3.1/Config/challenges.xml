@@ -1,0 +1,21 @@
+<config>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_SelfTraits -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<!-- <remove xpath="/challenges/challenge[@name='redeemChallenge']"/> -->
+	
+	<!-- <insertAfter xpath="/challenges/challenge_group[@title_key='challengeGroupTwitchSilly']"> -->
+		
+		<!-- <challenge name="redeemChallenge" title_key="challengeRedeemChallenge" icon="ui_game_symbol_challenge_basics_tutorial_challenge" group="Basics" -->
+		<!-- prerequisite_hint="challengeRedeemChallengeHint1" hint="challengeRedeemChallengeHint2" -->
+		<!-- short_description_key="challengeRedeemChallengeShort" description_key="challengeRedeemChallengeDesc" redeem_always="true" reward_text_key="challenge_reward_selfTraits" reward_event="startSelfTraits"> -->
+		<!-- <objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/> -->
+		<!-- </challenge> -->
+	
+	<!-- </insertAfter> -->
+	
+</config>
