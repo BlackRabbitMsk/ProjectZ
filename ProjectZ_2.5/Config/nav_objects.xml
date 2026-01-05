@@ -1,0 +1,273 @@
+<config>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Master_Skills -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/nav_object_classes">
+	
+		<nav_object_class name="sledgehammer">
+			<property name="requirement_type" value="Tracking" />
+
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_sledge"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="-1"/>
+				<property name="color" value="255,255,0,255"/>
+				<property name="has_pulse" value="true"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_sledge"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="1024"/>
+				<property name="color" value="255,255,0,255"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="false" />
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_sledge"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="50"/>
+				<property name="color" value="255,255,0,255"/>
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Radiostation -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/nav_object_classes">
+	
+		<nav_object_class name="EnemyDot" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_enemy_dot"/>
+				<property name="color" value="255,0,0,255"/>
+				<property name="has_pulse" value="true"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_enemy_dot"/>
+				<property name="color" value="255,0,0,255"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+			</compass_settings>
+		</nav_object_class>
+		
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Rare_Modifiers -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/nav_object_classes">
+			
+		
+		
+		<nav_object_class name="EnemyAnimal" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_trex"/>
+				<property name="color" value="255,230,40"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_trex"/>
+				<property name="color" value="255,230,40"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</compass_settings>
+		</nav_object_class>
+			
+		<nav_object_class name="EnemyVulture" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_map_cursor"/>
+				<property name="color" value="255,160,50"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_map_cursor"/>
+				<property name="color" value="255,160,50"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</compass_settings>
+		</nav_object_class>
+				
+		<nav_object_class name="EnemyZombiesInDistance" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_enemy_dot"/>
+				<property name="color" value="150,150,150"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="80"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_enemy_dot"/>
+				<property name="color" value="150,150,150"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="false" />
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="80"/>
+			</compass_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="EnemyZombie" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,255,255"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,255,255"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</compass_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="EnemyFeral" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,230,40"/>
+				<property name="has_pulse" value="true"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,230,40"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</compass_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="EnemyRadiated" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,160,50"/>
+				<property name="has_pulse" value="true"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,160,50"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</compass_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="EnemyElite" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,20,0"/>
+				<property name="has_pulse" value="true"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_zombie"/>
+				<property name="color" value="255,20,0"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="40"/>
+			</compass_settings>
+		</nav_object_class>
+				
+		<nav_object_class name="EnemyMiniboss" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_twitch_minion_overhead"/>
+				<property name="color" value="255,255,255,255"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="80"/>
+				<property name="has_pulse" value="true"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_twitch_minion_overhead"/>
+				<property name="color" value="255,255,255,255"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="80"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_twitch_minion_overhead"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="25"/>
+				<property name="color" value="255,255,255,255"/>
+				<property name="use_head_offset" value="true"/>
+				<property name="offset" value="0,2,0" />
+				<property name="sprite_size" value="36" />
+				<property name="sprite_fill_type" value="Health" />
+				<property name="sprite_fill_name" value="ui_game_symbol_twitch_overhead_hp_ring" />
+				<property name="sprite_fill_color" value="90,0,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="EnemyBoss" extends="zombie">	
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_twitch_boss_overhead"/>
+				<property name="color" value="255,255,255,255"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="80"/>
+				<property name="has_pulse" value="true"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_twitch_boss_overhead"/>
+				<property name="color" value="255,255,255,255"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="80"/>
+				<property name="has_pulse" value="true"/>
+				<property name="icon_clamped" value="true" />
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_twitch_boss_overhead"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="25"/>
+				<property name="color" value="255,255,255,255"/>
+				<property name="use_head_offset" value="true"/>
+				<property name="offset" value="0,2,0" />
+				<property name="sprite_size" value="36" />
+				<property name="sprite_fill_type" value="Health" />
+				<property name="sprite_fill_name" value="ui_game_symbol_twitch_overhead_hp_ring" />
+				<property name="sprite_fill_color" value="90,0,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+	</append>
+	
+</config>

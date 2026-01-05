@@ -1,0 +1,128 @@
+<config>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_HUD -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="windowTimeStats"/>
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Master_Skills -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/xui/ruleset">
+				
+		<window_group name="workstation_farmerStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+		
+		<window_group name="workstation_forgeImp" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingListImp"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue10"/>
+			<window name="windowToolsForgeImp" />
+			<window name="windowFuel" />
+			<window name="windowForgeInputImp" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_workbenchImp" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingListImp"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue10"/>
+			<window name="windowToolsWorkbenchImp"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_recycler" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingListImp"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue10"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_chemistryStationImp" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingListImp"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue10"/>
+			<window name="windowToolsChemicalStationImp"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_kitchenStove" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingListImp"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue10"/>
+			<window name="windowToolsCampfire" />
+			<!-- <window name="windowKitchenAccessories" /> -->
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_cementMixerImp" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingListImp"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue10"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_farmerStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+		
+		<window_group name="workstation_HydroponicStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+		
+		<window_group name="GeneratorImp" controller="XUiC_PowerSourceWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="content">
+			<window name="windowPowerSourceStats" />
+			<window name="windowPowerSourceSlotsImp" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+	</append>
+		
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- Z_Radiostation -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<append xpath="/xui/ruleset">
+	
+		<window_group name="workstation_radioStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+	</append>
+
+</config>
