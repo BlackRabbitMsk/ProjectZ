@@ -1630,7 +1630,7 @@
 			<property name="HeatMapFrequency" value="500"/>
 			
 			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
-			<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE,5"/>
 			<property name="OpenSound" value="forge_open"/>
 			<property name="CloseSound" value="forge_close"/>
 			<property name="CraftSound" value="forge_smelt_click"/>
@@ -1757,7 +1757,7 @@
 			<property name="HeatMapStrength" value="3"/>
 			<property name="HeatMapTime" value="2500"/>
 			<property name="HeatMapFrequency" value="500"/>
-			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE,3"/>
 			<property name="OpenSound" value="chem_station_open"/>
 			<property name="CloseSound" value="chem_station_close"/>
 			<property name="CraftSound" value="chem_station_mix_click"/>
@@ -1826,7 +1826,7 @@
 			<property name="HeatMapTime" value="5000"/>
 			<property name="HeatMapFrequency" value="1000"/>
 			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
-			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE,3"/>
 			<property name="OpenSound" value="campfire_open"/>
 			<property name="CloseSound" value="campfire_close"/>
 			<property name="CraftSound" value="campfire_cook_click"/>
@@ -4570,16 +4570,6 @@
 	<!-- Grass -->
 	<append xpath="/blocks/block[@name='treeGrassMaster']">
 		<property name="BuffsWhenWalkedOn" value="buffAllergyGrass"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='campfire']">
-		<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
-	</append>
-	<append xpath="/blocks/block[@name='forge']">
-		<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
-	</append>
-	<append xpath="/blocks/block[@name='chemistryStation']">
-		<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	</append>
 	
 </config>
