@@ -6526,7 +6526,7 @@
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$MissChance"/>
 				<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="twitch_bucket_hit" play_at_self="true"/>
 				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffPackMuleDisplay"/>
-				<passive_effect name="GeneralDamageResist" operation="base_add" level="5" value="1"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
 		</effect_group>
 		
 		<!-- perk Aggressor -->

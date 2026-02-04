@@ -4245,7 +4245,7 @@
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="EQ" value="4"/></triggered_effect>
 				<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$MediumArmorMissChance" operation="set" value="20">
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="EQ" value="5"/></triggered_effect>
-				<triggered_effect trigger="onPerkLevelChanged" action="RemoveCVar" cvar="$MediumArmorMissChance">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="RemoveCVar" cvar="$MediumArmorMissChance">
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="LTE" value="0"/></triggered_effect>
 			</effect_group>
 						
@@ -4313,7 +4313,7 @@
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="EQ" value="4"/></triggered_effect>
 				<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$HeavyArmorMissChance" operation="set" value="25">
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="EQ" value="5"/></triggered_effect>
-				<triggered_effect trigger="onPerkLevelChanged" action="RemoveCVar" cvar="$HeavyArmorMissChance">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="RemoveCVar" cvar="$HeavyArmorMissChance">
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="LTE" value="0"/></triggered_effect>
 			</effect_group>
 						
