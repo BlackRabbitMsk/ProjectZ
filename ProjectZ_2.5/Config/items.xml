@@ -9493,7 +9493,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
@@ -9610,7 +9610,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
@@ -9728,7 +9728,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
@@ -9846,7 +9846,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
@@ -9983,7 +9983,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
@@ -10099,7 +10099,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
@@ -10216,7 +10216,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
@@ -10333,7 +10333,7 @@
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="Sound_reload" value=""/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol_SMG"/>
+			<property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
 			<!-- <property name="DamageBonus.head" value="4"/>
 			<property name="DamageBonus.wood" value="5"/>
 			<property name="DamageBonus.earth" value=".2"/> -->
