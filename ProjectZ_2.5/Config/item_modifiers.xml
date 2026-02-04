@@ -12,7 +12,7 @@
 		
 		<!-- Enhanced equipment -->
 		
-		<item_modifier name="modEnhancedSpear" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedSpear" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedSpearDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -27,7 +27,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedClub" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedClub" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedClubDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -42,7 +42,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedSledgehammer" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedSledgehammer" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedSledgehammerDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -57,7 +57,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedKnuckles" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedKnuckles" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedKnucklesDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -72,7 +72,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedKnife" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedKnife" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedKnifeDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -87,7 +87,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedStunBaton" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedStunBaton" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedStunBatonDesc"/>
 			<property name="Material" value="MUniversalParts"/>
