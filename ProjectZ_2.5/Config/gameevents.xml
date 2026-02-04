@@ -376,12 +376,12 @@
 				<action class="SpawnEntity">	
 					<property name="entity_names" value="zombieUtilityWorker,zombieUtilityWorkerFeral"/>
 					<property name="spawn_count" value="2"/>
-					<property name="phase" value="0"/>
+					<property name="air_spawn" value="false"/>
 					<property name="add_to_group" value="zombies"/>
 					<property name="safe_spawn" value="true"/>
 					<property name="min_distance" value="10"/>
 					<property name="max_distance" value="15"/>
-					<property name="spawn_type" value="NearPosition"/>
+					<property name="spawn_type" value="Position"/>
 					<property name="is_aggressive" value="true"/>
 				</action>
 		</action_sequence>		

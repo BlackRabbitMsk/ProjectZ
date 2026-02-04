@@ -2175,7 +2175,7 @@
 			<property name="SoundPickup" value="bladetrap_grab"/>
 			<property name="SoundPlace" value="bladetrap_place"/>
 			<property name="FuelTypes" value="ammoGasCan,1000,ammoGasCan,1000,ammoGasCan,1000"/>
-			<property name="ActivationEvent" value="block_autominer_uw"/>
+			<property name="CloseEvent" value="block_autominer_uw"/>
 			<property name="RequiredMods" value="toolAutominerSpareParts,toolAutominerResourcePacker,toolAutominerSiren"/>
 			<property name="RequiredModsOnly" value="true"/>
 			<property name="CollectorEmptyText" value="dewCollectorEmpty"/>
