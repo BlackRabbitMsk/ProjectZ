@@ -18234,7 +18234,7 @@
             <stack_type value="replace"/>
 			<duration value="10"/>
 			<effect_group>				
-                <passive_effect name="PlayerExpGain" operation="perc_add" value=".05"/>
+                <passive_effect name="PlayerExpGain" operation="perc_add" value=".10"/>
             </effect_group>
        </buff>
 	   

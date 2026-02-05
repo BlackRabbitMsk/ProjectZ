@@ -4563,7 +4563,7 @@ SkillPointBundle25Desc,items,Item,,"The bundle contains 25 skills journals","Н�
 
 buffXPBonusName,buffs,buff,,Bonus to experience gained,Бонус к получаемому опыту,Bonificación a la experiencia obtenida
 buffXPBonusTooltip,buffs,buff,,Experience gained increased by 10%,Получаемый опыт увеличен на 10%,Experiencia obtenida aumentada en un 10%
-buffXPBonusIncDesc,buffs,Buff,,"You have a good teacher next to you.\nAll experience gained is increased by [DECEA3]5%[-]","Рядом с вами хороший учитель.\nВесь получаемый опыт увеличена на [DECEA3]5%[-]","Tienes un buen maestro a tu lado.\nToda la experiencia obtenida se aumenta en un [DECEA3]5%[-]"
+buffXPBonusIncDesc,buffs,Buff,,"You have a good teacher next to you.\nAll experience gained is increased by [DECEA3]10%[-]","Рядом с вами хороший учитель.\nВесь получаемый опыт увеличена на [DECEA3]10%[-]","Tienes un buen maestro a tu lado.\nToda la experiencia obtenida se aumenta en un [DECEA3]10%[-]"
 
 attperfection,progression,Attribute,,Perfection,Совершенствование,Perfección
 attperfectionName,progression,Attribute,,Attribute: Perfection,Атрибут: Совершенствование,Atributo: Perfección
