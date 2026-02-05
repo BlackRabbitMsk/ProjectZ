@@ -846,6 +846,7 @@
 			<property name="SortOrder1" value="U200"/>
 			<property name="SortOrder2" value="0000"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+			<property name="EconomicValue" value="67"/>
 		</block>
 		
 		<!-- *** BIG STORAGE -->
