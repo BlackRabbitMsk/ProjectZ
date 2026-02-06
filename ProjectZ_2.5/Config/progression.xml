@@ -19,7 +19,7 @@
 	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 	 
 	<set xpath="/progression/perks/book[@name='perkPistolPeteComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">ammoBundle9mmBulletBall,ammoBundle9mmBulletHP,ammoBundle9mmBulletAP,ammoDisBundle9mmBulletBall,ammoDisBundle9mmBulletHP,ammoDisBundle9mmBulletAP</set>
-	<set xpath="/progression/perks/book[@name='perkShotgunMessiahComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">ammoBundleShotgunShell,ammoBundleShotgunSlug,ammoBundleShotgunBreachingSlug,ammoDisBundleShotgunShell,ammoDisBundleShotgunSlug,ammoBundleShotgunBreachingSlug</set>
+	<set xpath="/progression/perks/book[@name='perkShotgunMessiahComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">ammoBundleShotgunShell,ammoBundleShotgunSlug,ammoBundleShotgunBreachingSlug,ammoDisBundleShotgunShell,ammoDisBundleShotgunSlug,ammoDisBundleShotgunBreachingSlug</set>
 	<set xpath="/progression/perks/book[@name='perkEnforcerComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">ammoBundle44MagnumBulletAP,ammoBundle44MagnumBulletHP,ammoBundle44MagnumBulletBall,ammoDisBundle44MagnumBulletBall,ammoDisBundle44MagnumBulletHP,ammoDisBundle44MagnumBulletAP</set>
 	<set xpath="/progression/perks/book[@name='perkSniperComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">ammoBundle762mmBulletBall,ammoBundle762mmBulletHP,ammoBundle762mmBulletAP,ammoDisBundle762mmBulletBall,ammoDisBundle762mmBulletHP,ammoDisBundle762mmBulletAP</set>
 

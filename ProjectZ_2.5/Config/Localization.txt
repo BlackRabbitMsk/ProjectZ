@@ -1086,18 +1086,18 @@ Quest_LegCont_SamplesT3Offer,Quest,Quest Info,,"«And so we meet again. Glad you
 
 AmmoDisassemblyDesc,items,item,,"There is no such thing as too much ammo. You can disassemble ammo and get 75% of the resources that were used to create it.\n\nUse this item to get resources.","Лишних патронов не бывает. Вы можете разобрать боеприпасы и получить 75% ресурсов, которые были использованы для их создания.\n\nВоспользуйтесь этим предметом, чтобы получить ресурсы.","Nunca hay demasiada munición. Puedes desarmar munición y obtener el 75 % de los recursos utilizados para crearla. Usa este objeto para obtener recursos."
 
-ammoDisBundle9mmBulletBall,items,item,,9 mm Ammo Disassembly,Разбор боеприпасов 9 мм,Desmontaje de munición de 9 mm
-ammoDisBundle9mmBulletHP,items,item,,9 mm Improved Ammo Disassembly,Разбор усиленных боеприпасов 9 мм,Desglose de munición mejorado de 9 mm
-ammoDisBundle9mmBulletAP,items,item,,9 mm Armor-piercing Ammo Disassembly,Разбор бронебойных боеприпасов 9 мм,Desmontaje de munición perforante de 9 mm
+ammoDisBundle9mmBulletBall,items,item,,9mm Ammo Disassembly,Разбор боеприпасов 9 мм,Desmontaje de munición de 9 mm
+ammoDisBundle9mmBulletHP,items,item,,HiPower 9mm Ammo Disassembly,Разбор усиленных боеприпасов 9 мм,Desglose de munición mejorado de 9 mm
+ammoDisBundle9mmBulletAP,items,item,,AP 9mm Ammo Disassembly,Разбор бронебойных боеприпасов 9 мм,Desmontaje de munición perforante de 9 mm
 ammoDisBundle44MagnumBulletBall,items,item,,.44 Magnum Ammo Disassembly,Разбор боеприпасов .44 Magnum,Desmontaje de munición de .44 Magnum
-ammoDisBundle44MagnumBulletHP,items,item,,.44 Magnum Improved Ammo Disassembly,Разбор усиленных боеприпасов .44 Magnum,Desglose de munición mejorado de .44 Magnum
-ammoDisBundle44MagnumBulletAP,items,item,,.44 Magnum Armor-piercing Ammo Disassembly,Разбор бронебойных боеприпасов .44 Magnum,Desmontaje de munición perforante de .44 Magnum
-ammoDisBundle762mmBulletBall,items,item,,7.62 mm Ammo Disassembly,Разбор боеприпасов 7.62 мм,Desmontaje de munición de 7.62 mm
-ammoDisBundle762mmBulletHP,items,item,,7.62 mm Improved Ammo Disassembly,Разбор усиленных боеприпасов 7.62 мм,Desglose de munición mejorado de 7.62 mm
-ammoDisBundle762mmBulletAP,items,item,,7.62 mm Armor-piercing Ammo Disassembly,Разбор бронебойных боеприпасов 7.62 мм,Desmontaje de munición perforante de 7.62 mm
-ammoDisBundleShotgunShell,items,item,,Shotgun Ammo Disassembly,Разбор боеприпасов для дробовика,Desmontaje de munición de escopeta
-ammoDisBundleShotgunSlug,items,item,,Shotgun Improved Ammo Disassembly,Разбор усиленных боеприпасов для дробовика,Desglose de munición mejorado de escopeta
-ammoDisBundleShotgunBreachingSlug,items,item,,Shotgun Armor-piercing Ammo Disassembly,Разбор бронебойных боеприпасов для дробовика,Desmontaje de munición perforante de escopeta
+ammoDisBundle44MagnumBulletHP,items,item,,HiPower .44 Magnum Ammo Disassembly,Разбор усиленных боеприпасов .44 Magnum,Desglose de munición mejorado de .44 Magnum
+ammoDisBundle44MagnumBulletAP,items,item,,AP .44 Magnum Ammo Disassembly,Разбор бронебойных боеприпасов .44 Magnum,Desmontaje de munición perforante de .44 Magnum
+ammoDisBundle762mmBulletBall,items,item,,7.62mm Ammo Disassembly,Разбор боеприпасов 7.62 мм,Desmontaje de munición de 7.62 mm
+ammoDisBundle762mmBulletHP,items,item,,HiPower 7.62mm Ammo Disassembly,Разбор усиленных боеприпасов 7.62 мм,Desglose de munición mejorado de 7.62 mm
+ammoDisBundle762mmBulletAP,items,item,,AP 7.62mm Ammo Disassembly,Разбор бронебойных боеприпасов 7.62 мм,Desmontaje de munición perforante de 7.62 mm
+ammoDisBundleShotgunShell,items,item,,Shotgun Shell Disassembly,Разбор боеприпасов для дробовика,Desmontaje de munición de escopeta
+ammoDisBundleShotgunSlug,items,item,,Shotgun AP Slug Disassembly,Разбор усиленных боеприпасов для дробовика,Desglose de munición mejorado de escopeta
+ammoDisBundleShotgunBreachingSlug,items,item,,Shotgun Breaching Slug Disassembly,Разбор бронебойных боеприпасов для дробовика,Desmontaje de munición perforante de escopeta
 
 <!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->

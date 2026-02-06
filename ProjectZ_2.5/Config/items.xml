@@ -6106,7 +6106,7 @@
 			<property name="Stacknumber" value="100"/>
 			<property name="EconomicValue" value="750"/>
 			<property class="Action0">
-				<property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourceScrapPolymers"/>
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers"/>
 				<property name="Create_item_count" value="120,300,60"/>
 			</property>
 		</item>
