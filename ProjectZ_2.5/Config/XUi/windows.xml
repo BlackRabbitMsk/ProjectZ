@@ -585,7 +585,7 @@
 				<quest_objective_tracker_entry />
 			</grid>
 			
-			<rect pos="-30,{#trackerheight * -1 - 50}" height="100" width="270" visible="{questhintavailable}">
+			<rect pos="0,{#trackerheight * -1 - 50}" height="100" width="300" visible="{questhintavailable}">
 				<!-- <sprite pos="6,6" name="Background" sprite="ui_game_popup" /> -->
 				<label depth="3" text="{questhint}" font_size="20" justify="right" parse_actions="true" actions_default_format="( [e61a16]###[-] )" spacing_y="5" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1" />
 			</rect>
