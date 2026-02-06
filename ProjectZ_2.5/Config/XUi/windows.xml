@@ -9,7 +9,7 @@
 	<remove xpath="windows/window[@name='windowBackpack']"/>
 	
 	<!-- adjust windowlooting to match the size of the new player dropped backpack container -->
-    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">10</set>
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">12</set>
     <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">10</set>
 	
 	<insertAfter xpath="windows/popupMenu[@name='popupMenu']">
