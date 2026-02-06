@@ -4385,8 +4385,8 @@
 
 
 		<!-- Signal smoke to start the quest -->
-		<block name="SignalSmokeFaint">
-			<property name="DescriptionKey" value="SignalSmokeFaintDesc"/>
+		<block name="SmokeSignalWeak">
+			<property name="DescriptionKey" value="SmokeSignalWeakDesc"/>
 			<property name="CustomIcon" value="capChimney"/>	
 			<property name="CustomIconTint" value="#8692FF"/>
 			<property name="TintColor" value="#8692FF"/>
@@ -4408,54 +4408,59 @@
 			<property name="SortOrder2" value="0002"/>
 			<property name="Group" value="Building,TCScience,advBuilding"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,A21_NEW"/>
+			<property name="EconomicValue" value="600"/>
 		</block>
 		
-		<block name="SignalSmokeMedium">
-			<property name="Extends" value="SignalSmokeFaint"/>
-			<property name="DescriptionKey" value="SignalSmokeMediumDesc"/>
+		<block name="SmokeSignalModerate">
+			<property name="Extends" value="SmokeSignalWeak"/>
+			<property name="DescriptionKey" value="SmokeSignalModerateDesc"/>
 			<property name="CustomIconTint" value="#FFA234"/>
 			<property name="TintColor" value="#FFA234"/>
+			<property name="EconomicValue" value="1230"/>
 		</block>
 		
-		<block name="SignalSmokeStrong">
-			<property name="Extends" value="SignalSmokeFaint"/>
-			<property name="DescriptionKey" value="SignalSmokeStrongDesc"/>
+		<block name="SmokeSignalStrong">
+			<property name="Extends" value="SmokeSignalWeak"/>
+			<property name="DescriptionKey" value="SmokeSignalStrongDesc"/>
 			<property name="CustomIconTint" value="#FF2F13"/>
 			<property name="TintColor" value="#FF2F13"/>
+			<property name="EconomicValue" value="3700"/>
 		</block>
 		
-		<block name="SignalSmokeAmmoSmall">
-			<property name="Extends" value="SignalSmokeFaint"/>
+		<block name="SmokeSignalWeakAmmo">
+			<property name="Extends" value="SmokeSignalWeak"/>
 			<property name="CustomIconTint" value="#5AFF75"/>
 			<property name="TintColor" value="#5AFF75"/>
 		</block>
 		
-		<block name="SignalSmokeAmmoBig">
-			<property name="Extends" value="SignalSmokeFaint"/>
-			<property name="DescriptionKey" value="SignalSmokeMediumDesc"/>
+		<block name="SmokeSignalModerateAmmo">
+			<property name="Extends" value="SmokeSignalWeak"/>
+			<property name="DescriptionKey" value="SmokeSignalModerateDesc"/>
 			<property name="CustomIconTint" value="#009719"/>
 			<property name="TintColor" value="#009719"/>
+			<property name="EconomicValue" value="1230"/>
 		</block>
 		
-		<block name="SignalSmokeAmmoLarge">
-			<property name="Extends" value="SignalSmokeFaint"/>
-			<property name="DescriptionKey" value="SignalSmokeStrongDesc"/>
+		<block name="SmokeSignalStrongAmmo">
+			<property name="Extends" value="SmokeSignalWeak"/>
+			<property name="DescriptionKey" value="SmokeSignalStrongDesc"/>
 			<property name="CustomIconTint" value="#005D0F"/>
-			<property name="TintColor" value="#005D0F"/>
+			<property name="EconomicValue" value="3700"/>
 		</block>
 		
-		<block name="SignalSmokeMedicineSmall">
-			<property name="Extends" value="SignalSmokeFaint"/>
-			<property name="DescriptionKey" value="SignalSmokeMedicineDesc"/>
+		<block name="SmokeSignalWeakMedicine">
+			<property name="Extends" value="SmokeSignalWeak"/>
+			<property name="DescriptionKey" value="SmokeSignalMedicineDesc"/>
 			<property name="CustomIconTint" value="#E23C91"/>
 			<property name="TintColor" value="#E23C91"/>
 		</block>
 		
-		<block name="SignalSmokeMedicineBig">
-			<property name="Extends" value="SignalSmokeFaint"/>
-			<property name="DescriptionKey" value="SignalSmokeMedicineDesc"/>
+		<block name="SmokeSignalModerateMedicine">
+			<property name="Extends" value="SmokeSignalWeak"/>
+			<property name="DescriptionKey" value="SmokeSignalMedicineDesc"/>
 			<property name="CustomIconTint" value="#B83CE2"/>
 			<property name="TintColor" value="#B83CE2"/>
+			<property name="EconomicValue" value="1230"/>
 		</block>
 		
 		<block name="bodyMediumBait">
