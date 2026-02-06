@@ -227,7 +227,7 @@
 			</passive_effect>
 			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
 			<passive_effect name="CrouchSpeed" operation="perc_add" value=".04,.08,.12,.16,.2,.4" tier="1,2,3,4,5,6"/>
-			<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
+			<passive_effect name="EnemySearchDuration" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
 		</effect_group>
 	</append>
 	
@@ -1466,10 +1466,10 @@
 			
 			<effect_group>
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
-					<passive_effect name="LightMultiplier" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6">
+					<passive_effect name="LightMultiplier" operation="perc_add" value="-.03,-.06,-.09,-.12,-.15,-.3" tier="1,2,3,4,5,6">
 						<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="65"/>
 					</passive_effect>
-					<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.03,-.06,-.09,-.12,-.15,-.3" tier="1,2,3,4,5,6"/>
 					<passive_effect name="CrouchSpeed" operation="perc_add" value=".05,.1,.15,.2,.25,.5" tier="1,2,3,4,5,6"/>
 					<passive_effect name="EnemySearchDuration" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
 			</effect_group>
@@ -2261,13 +2261,11 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.56"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
-				<display_value name="dNoiseMultiplier" value=".1"/>
 				
 				<passive_effect name="CarryCapacity" operation="base_add" value="1,2,3,4,5,10" tier="1,2,3,4,5,6"/>
 				<display_value name="dCarryCapacity" value="1,2,3,4,5,10" tier="1,2,3,4,5,6"/>
 				
-				<display_value name="dSneakEffectiveness" value="-.06,-.12,-.18,-.24,-.3,-.4" tier="1,2,3,4,5,6"/>
+				<display_value name="dSneakEffectiveness" value=".06,.12,.18,.24,.3,.4" tier="1,2,3,4,5,6"/>
 			</effect_group>
 
 			<effect_group>
@@ -2322,8 +2320,6 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.56"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
-				<display_value name="dNoiseMultiplier" value=".1"/>
 				
 				<display_value name="dEnhancedAtackSpeed" value=".03,.06,.09,.12,.15,.25" tier="1,2,3,4,5,6"/>
 				<display_value name="dReloadSpeedMultiplierSniper" value=".05,.1,.15,.2,.25,.5" tier="1,2,3,4,5,6"/>
