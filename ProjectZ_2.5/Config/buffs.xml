@@ -18234,7 +18234,7 @@
             <stack_type value="replace"/>
 			<duration value="10"/>
 			<effect_group>				
-                <passive_effect name="PlayerExpGain" operation="perc_add" value=".05"/>
+                <passive_effect name="PlayerExpGain" operation="perc_add" value=".10"/>
             </effect_group>
        </buff>
 	   
@@ -18740,6 +18740,9 @@
 		
 	</append>
 	
+	<!-- Defender-Z Phase 2 Storm resist-->
+	<!-- Will still take damage from buffSnow_Hazard02 , buffBurnt_Hazard02 , buffDesert_Hazard02 , buffWasteland_Hazard02 -->
+	<!-- TRIGGERED_BY: Buffs = buffSnow_Hazard01 and so on-->
 	<insertAfter xpath="/buffs/buff[@name='buffBurnt_Storm_Stage02']/effect_group/requirement[@buff='buffBurnt_Storm_Recover01,god']">
 		<requirement name="CVarCompare" cvar="$StormResist" operation="LT" value="1"/>
 	</insertAfter>
