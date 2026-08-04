@@ -3674,8 +3674,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeFaint" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeFaint" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalWeak" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalWeak" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -3767,8 +3767,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeMedium" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeMedium" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalModerate" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalModerate" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -3860,8 +3860,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeStrong" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeStrong" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalStrong" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalStrong" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -3956,8 +3956,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeFaint" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeFaint" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalWeak" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalWeak" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -4049,8 +4049,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeMedium" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeMedium" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalModerate" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalModerate" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -4142,8 +4142,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeStrong" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeStrong" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalStrong" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalStrong" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -4238,8 +4238,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeFaint" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeFaint" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalWeak" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalWeak" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -4331,8 +4331,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeMedium" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeMedium" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalModerate" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalModerate" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -4424,8 +4424,8 @@
 			</objective>
 			
 			<!-- 3 -->
-			<action type="GameEvent" id="action_give_SignalSmokeStrong" phase="3"/>
-			<objective type="BlockPlace" id="SignalSmokeStrong" value="1" phase="3"/>
+			<action type="GameEvent" id="action_give_SmokeSignalStrong" phase="3"/>
+			<objective type="BlockPlace" id="SmokeSignalStrong" value="1" phase="3"/>
 			
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
@@ -4495,8 +4495,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo762SmallCase100Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoSmall" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoSmall" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalWeakAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalWeakAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="6" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoSmall_Check" phase="3"/>
@@ -4523,8 +4523,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo762BigCase1000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoBig" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoBig" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalModerateAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalModerateAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="12" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoBig_Check" phase="3"/>
@@ -4551,8 +4551,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo762LargeCase5000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoLarge" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoLarge" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalStrongAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalStrongAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="15" phase="3"/>
 			<action type="GameEvent" id="Spawner_Ammo_LargeWave" phase="3"/>
@@ -4579,8 +4579,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo44magnumSmallCase100Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoSmall" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoSmall" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalWeakAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalWeakAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="6" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoSmall_Check" phase="3"/>
@@ -4607,8 +4607,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo44magnumBigCase1000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoBig" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoBig" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalModerateAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalModerateAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="12" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoBig_Check" phase="3"/>
@@ -4635,8 +4635,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo44magnumLargeCase5000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoLarge" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoLarge" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalStrongAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalStrongAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="15" phase="3"/>
 			<action type="GameEvent" id="Spawner_Ammo_LargeWave" phase="3"/>
@@ -4663,8 +4663,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo9mmSmallCase100Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoSmall" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoSmall" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalWeakAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalWeakAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="6" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoSmall_Check" phase="3"/>
@@ -4691,8 +4691,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo9mmBigCase1000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoBig" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoBig" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalModerateAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalModerateAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="12" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoBig_Check" phase="3"/>
@@ -4719,8 +4719,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammo9mmLargeCase5000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoLarge" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoLarge" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalStrongAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalStrongAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="15" phase="3"/>
 			<action type="GameEvent" id="Spawner_Ammo_LargeWave" phase="3"/>
@@ -4747,8 +4747,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammoShotgunSmallCase100Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoSmall" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoSmall" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalWeakAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalWeakAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="6" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoSmall_Check" phase="3"/>
@@ -4775,8 +4775,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammoShotgunBigCase1000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoBig" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoBig" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalModerateAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalModerateAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="12" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoBig_Check" phase="3"/>
@@ -4803,8 +4803,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammoShotgunLargeCase5000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoLarge" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoLarge" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalStrongAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalStrongAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="15" phase="3"/>
 			<action type="GameEvent" id="Spawner_Ammo_LargeWave" phase="3"/>
@@ -4831,8 +4831,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammoTurretCase1500Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoBig" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoBig" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalModerateAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalModerateAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="12" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoBig_Check" phase="3"/>
@@ -4859,8 +4859,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="ammoTurretCase9000Offer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeAmmoLarge" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeAmmoLarge" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalStrongAmmo" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalStrongAmmo" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="15" phase="3"/>
 			<action type="GameEvent" id="Spawner_Ammo_LargeWave" phase="3"/>
@@ -5006,8 +5006,8 @@
 			<property name="category_key" value="quest"/>
 			<property name="offer_key" value="medicineSmallCaseOffer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeMedicineSmall" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeMedicineSmall" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalWeakMedicine" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalWeakMedicine" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="6" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoSmall_Check" phase="3"/>
@@ -5034,8 +5034,8 @@
 			<property name="category_key" value="quest"/>	
 			<property name="offer_key" value="medicineBigCaseOffer"/>
 			
-			<objective type="FetchKeep" id="SignalSmokeMedicineBig" value="1" phase="1"/>
-			<objective type="BlockPlace" id="SignalSmokeMedicineBig" value="1" phase="2"/>
+			<objective type="FetchKeep" id="SmokeSignalModerateMedicine" value="1" phase="1"/>
+			<objective type="BlockPlace" id="SmokeSignalModerateMedicine" value="1" phase="2"/>
 			
 			<objective type="EntityKill" value="12" phase="3"/>
 			<action type="GameEvent" id="Event_AmmoBig_Check" phase="3"/>

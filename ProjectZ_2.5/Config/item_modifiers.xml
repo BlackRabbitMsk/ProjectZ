@@ -12,7 +12,7 @@
 		
 		<!-- Enhanced equipment -->
 		
-		<item_modifier name="modEnhancedSpear" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedSpear" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedSpearDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -27,7 +27,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedClub" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedClub" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedClubDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -42,7 +42,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedSledgehammer" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedSledgehammer" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedSledgehammerDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -57,7 +57,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedKnuckles" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedKnuckles" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedKnucklesDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -72,7 +72,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedKnife" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedKnife" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedKnifeDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -87,7 +87,7 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modEnhancedStunBaton" installable_tags="armorHands,enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modEnhancedStunBaton" installable_tags="enhancedMelee" modifier_tags="enhanced" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="DescriptionKey" value="modEnhancedStunBatonDesc"/>
 			<property name="Material" value="MUniversalParts"/>
@@ -972,8 +972,9 @@
 		
 		
 		<!-- Enhanced protection plates -->
-		<item_modifier name="modRareArmorARResistHelmet" installable_tags="armorHead" modifier_tags="resistance,thermal" type="attachment">
-			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<!-- Defender-Z -->
+		<item_modifier name="modRareArmorARResistHelmet" installable_tags="armorHead" modifier_tags="resistance" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
 			<property name="UnlockedBy" value="MasterArmor"/>
 			<property name="Material" value="MoreMetal"/>
 			<property name="ItemTypeIcon" value="radiation"/>
@@ -981,7 +982,7 @@
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FFB800"/>
 			
-			<effect_group>
+			<effect_group tiered="false">
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistHelmet" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistHelmet" operation="set" value="0"/>
@@ -993,8 +994,8 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modRareArmorARResistOutfit" installable_tags="armorChest" modifier_tags="resistance,thermal" type="attachment">
-			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<item_modifier name="modRareArmorARResistOutfit" installable_tags="armorChest" modifier_tags="resistance" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
 			<property name="UnlockedBy" value="MasterArmor"/>
 			<property name="Material" value="MoreMetal"/>
 			<property name="ItemTypeIcon" value="radiation"/>
@@ -1002,7 +1003,7 @@
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FFB800"/>
 			
-			<effect_group>
+			<effect_group tiered="false">
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistOutfit" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistOutfit" operation="set" value="0"/>
@@ -1014,8 +1015,8 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modRareArmorARResistGloves" installable_tags="armorHands" modifier_tags="resistance,thermal" type="attachment">
-			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<item_modifier name="modRareArmorARResistGloves" installable_tags="armorHands" modifier_tags="resistance" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
 			<property name="UnlockedBy" value="MasterArmor"/>
 			<property name="Material" value="MoreMetal"/>
 			<property name="ItemTypeIcon" value="radiation"/>
@@ -1023,7 +1024,7 @@
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FFB800"/>
 			
-			<effect_group>
+			<effect_group tiered="false">
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistGloves" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistGloves" operation="set" value="0"/>
@@ -1035,8 +1036,8 @@
 			</effect_group>
 		</item_modifier>
 		
-		<item_modifier name="modRareArmorARResistBoots" installable_tags="armorFeet" modifier_tags="resistance,thermal" type="attachment">
-			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<item_modifier name="modRareArmorARResistBoots" installable_tags="armorFeet" modifier_tags="resistance" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
 			<property name="UnlockedBy" value="MasterArmor"/>
 			<property name="Material" value="MoreMetal"/>
 			<property name="ItemTypeIcon" value="radiation"/>
@@ -1044,7 +1045,7 @@
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FFB800"/>
 			
-			<effect_group>
+			<effect_group tiered="false">
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StormResistBoots" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StormResistBoots" operation="set" value="0"/>

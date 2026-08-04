@@ -13,38 +13,62 @@
 	
 	<insertAfter xpath="controls/item_stack">
 		<backpack_item_stack controller="ItemStack" on_scroll="false" allow_dropping="true" prefix_id="false">
-			<rect controller="${controller}" style="itemStack, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" tooltip="{tooltip}" enabled="{# !userlockmode}" >
-				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="62" height="56" color="[black]" type="sliced" fillcenter="false" />
-				<sprite depth="3" name="background" sprite="menu_empty3px" width="56" height="50" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/>
-				
-				<sprite depth="4" pos="2,-2" color="140,128,98" width="52" height="46" type="sliced" visible="{# userlockedslot and !userlockmode}"/>
-				
-				<!-- <sprite depth="4" name="background"  width="56" height="50" color="175,35,175" type="filled" globalopacity="true" fillcenter="false" visible="{# userlockedslot and !userlockmode}"/> -->
-				
-				
-				<sprite depth="2" name="highlightOverlay" width="56" height="50" color="{backgroundcolor}" pos="0,0" type="sliced" globalopacity="true"/>
+			<rect controller="${controller}" style="itemStack, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" tooltip="{tooltip}" enabled="{# !userlockmode}" 
+				width="58" height="52">
 
-				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="58,52" globalopacity="true"/>
+				<!-- BACKGROUND -->
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" 
+					width="61" height="55" pos="-3,3" /> <!-- 3px larger than slot size-->
+				<sprite depth="3" name="background" sprite="menu_empty3px" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"
+					width="56" height="50" pos="0,0" /> <!-- 2px smaller -->
+				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" globalopacity="true"
+					size="56,50" pos="0,0" /> <!-- 2px smaller -->
 
-				<sprite depth="6" name="itemIcon" width="44" height="44" atlas="ItemIconAtlas" sprite="{itemicon}" pos="28,-24" pivot="center" foregroundlayer="true" color="{iconcolor}" />
-				<sprite depth="8" name="lockTypeIcon" width="17" height="17" sprite="{locktypeicon}" pos="2,-2" foregroundlayer="true"/>
-				<sprite depth="8" name="itemtypeicon" width="17" height="17" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+				<!-- Highlight -->
+				<sprite depth="2" name="highlightOverlay" color="{backgroundcolor}" type="sliced" globalopacity="true"
+					width="55" height="49" pos="0,0" /> <!-- 3px smaller -->
 
-				<sprite depth="3" name="durabilityBackground" width="51" height="8" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="2, -39" foregroundlayer="true" visible="{hasdurability}" />
-				<filledsprite depth="4" name="durability" width="51" height="8" sprite="menu_empty2px" color="{durabilitycolor}" fill="{durabilityfill}" type="filled" pos="2, -39" foregroundlayer="true" visible="{hasdurability}" />
+				<!-- ITEM -->
+				<sprite depth="6" name="itemIcon" atlas="ItemIconAtlas" sprite="{itemicon}" pivot="center" foregroundlayer="true" color="{iconcolor}" 
+					width="55" height="49" pos="29,-26" /> <!-- 3px smaller -->
 
-				<sprite depth="5" name="disabledOverlay" width="58" height="52" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+				<!-- LOCK -->
+				<sprite depth="8" name="lockTypeIcon" sprite="{locktypeicon}" foregroundlayer="true"
+					width="15" height="15" pos="2,-2" />
+				<sprite depth="8" name="itemtypeicon" sprite="ui_game_symbol_{itemtypeicon}" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" 
+					width="15" height="15" pos="2,-2" />
 
-				<label depth="7" name="stackValue" pos="3,-33" width="50" height="28" text="{itemcount}" font_size="18" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
-				<label depth="7" name="timer" pos="35,-33" width="56" height="24" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
-				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="56" height="56" color="255,0,0,255" type="sliced" visible="{# ishovered and islocked}" foregroundlayer="true"/>
-				<sprite depth="13" name="assembleIcon" size="31,31" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="11,-11" foregroundlayer="true" />
+				<!-- LOCK Highlight -->
+				<sprite depth="4" color="140,128,98" type="sliced" visible="{# userlockedslot and !userlockmode}"
+					width="56" height="50" pos="0,0" />
 
-				<button name="rectSlotLock" depth="15" style="press, hover" width="61" height="65" visible="{userlockmode}" sprite="" hoverscale="1" use_selection_box="true">
-					<sprite depth="16" name="button" width="17" height="17" sprite="{# userlockedslot ? 'ui_game_symbol_lock' : 'ui_game_symbol_unlock' }" pos="47, -11" style="icon32px" pivot="center" color="{# userlockedslot ? '222,206,163' : '255,255,255' }" />
+				<!-- LOCK Button -->
+				<button name="rectSlotLock" depth="15" style="press, hover" visible="{userlockmode}" sprite="" hoverscale="1" use_selection_box="true"
+					width="58" height="52" pos="0,0"> 
+					<sprite depth="16" name="button" sprite="{# userlockedslot ? 'ui_game_symbol_lock' : 'ui_game_symbol_unlock' }" style="icon32px" pivot="center" color="{# userlockedslot ? '222,206,163' : '255,255,255' }" 
+						width="16" height="16" pos="46,-9" /> 
 				</button>
-				<!-- <sprite depth="15" name="iconSlotLock" width="17" height="17" sprite="ui_game_symbol_lock" pos="47, -11" style="icon32px" pivot="center" visible="{# userlockedslot and !userlockmode}" color="222,206,163" /> -->
-				
+
+				<!-- DURABILITY -->
+				<sprite depth="3" name="durabilityBackground" sprite="menu_empty3px" color="[darkGrey]" type="sliced" foregroundlayer="true" visible="{hasdurability}" 
+					width="56" height="8" pos="0, -42" /> <!-- 2px smaller width, 8px height-->
+				<filledsprite depth="4" name="durability" sprite="menu_empty2px" color="{durabilitycolor}" fill="{durabilityfill}" type="filled" foregroundlayer="true" visible="{hasdurability}" 
+					width="56" height="8" pos="0, -42" /> <!-- 2px smaller width, 8px height-->
+
+				<!-- DISABLED -->
+				<sprite depth="5" name="disabledOverlay" color="[darkGrey_half_alpha]" type="sliced" visible="false"
+					width="57" height="51" pos="1,-1" /> <!-- 1px smaller -->
+
+				<!-- MISC -->
+				<label depth="7" name="stackValue" text="{itemcount}" font_size="18" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" 
+					width="50" height="28" pos="2,-33" /> <!-- -3px width, 28px height-->
+				<label depth="7" name="timer" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"
+					width="55" height="24" pos="31,-33" /> <!-- -3px width, 24px height -->
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" color="255,0,0,255" type="sliced" visible="{# ishovered and islocked}" foregroundlayer="true"
+					width="55" height="49" pos="0,0" /> <!-- 3px smaller -->
+				<sprite depth="13" name="assembleIcon" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" foregroundlayer="true" 
+					size="32,30" pos="12,-11" /> <!-- -2px then /2 -->
+
 			</rect>
 		</backpack_item_stack>
 	</insertAfter>

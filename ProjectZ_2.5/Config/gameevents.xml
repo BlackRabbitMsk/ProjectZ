@@ -376,12 +376,12 @@
 				<action class="SpawnEntity">	
 					<property name="entity_names" value="zombieUtilityWorker,zombieUtilityWorkerFeral"/>
 					<property name="spawn_count" value="2"/>
-					<property name="phase" value="0"/>
+					<property name="air_spawn" value="false"/>
 					<property name="add_to_group" value="zombies"/>
 					<property name="safe_spawn" value="true"/>
 					<property name="min_distance" value="10"/>
 					<property name="max_distance" value="15"/>
-					<property name="spawn_type" value="NearPosition"/>
+					<property name="spawn_type" value="Position"/>
 					<property name="is_aggressive" value="true"/>
 				</action>
 		</action_sequence>		
@@ -1481,48 +1481,48 @@
 		</action_sequence>
 		
 		<!-- Smoke Signal Receiving Events -->
-		<action_sequence name="action_give_SignalSmokeFaint">
+		<action_sequence name="action_give_SmokeSignalWeak">
 			<action class="AddItems">
-				<property name="added_items" value="SignalSmokeFaint" />
+				<property name="added_items" value="SmokeSignalWeak" />
 				<property name="added_item_counts" value="1" />
 			</action>
 		</action_sequence>
-		<action_sequence name="action_give_SignalSmokeMedium">
+		<action_sequence name="action_give_SmokeSignalModerate">
 			<action class="AddItems">
-				<property name="added_items" value="SignalSmokeMedium" />
+				<property name="added_items" value="SmokeSignalModerate" />
 				<property name="added_item_counts" value="1" />
 			</action>
 		</action_sequence>
-		<action_sequence name="action_give_SignalSmokeStrong">
+		<action_sequence name="action_give_SmokeSignalStrong">
 			<action class="AddItems">
-				<property name="added_items" value="SignalSmokeStrong" />
+				<property name="added_items" value="SmokeSignalStrong" />
 				<property name="added_item_counts" value="1" />
 			</action>
 		</action_sequence>
-		<action_sequence name="action_give_SignalSmokeAmmoSmall">
+		<action_sequence name="action_give_SmokeSignalWeakAmmo">
 			<action class="AddItems">
-				<property name="added_items" value="SignalSmokeAmmoSmall" />
+				<property name="added_items" value="SmokeSignalWeakAmmo" />
 				<property name="added_item_counts" value="1" />
 			</action>
 			<action class="AddBuff">
 				<property name="buff_name" value="Buff_Ammo_SmallCase_Status" />
 			</action>
 		</action_sequence>	
-		<action_sequence name="action_give_SignalSmokeAmmoBig">
+		<action_sequence name="action_give_SmokeSignalModerateAmmo">
 			<action class="AddItems">
-				<property name="added_items" value="SignalSmokeAmmoBig" />
+				<property name="added_items" value="SmokeSignalModerateAmmo" />
 				<property name="added_item_counts" value="1" />
 			</action>
 			<action class="AddBuff">
 				<property name="buff_name" value="Buff_Ammo_BigCase_Status" />
 			</action>
 		</action_sequence>
-		<action_sequence name="action_give_SignalSmokeAmmoLarge">
+		<action_sequence name="action_give_SmokeSignalStrongAmmo">
 			<property name="action_type" value="Game"/>
 			
 			<action class="AddItems">
 				<property name="phase" value="1" />
-				<property name="added_items" value="SignalSmokeAmmoLarge" />
+				<property name="added_items" value="SmokeSignalStrongAmmo" />
 				<property name="added_item_counts" value="1" />
 			</action>
 			<action class="AddBuff">
@@ -1531,18 +1531,18 @@
 			</action>
 		</action_sequence>
 
-		<action_sequence name="action_give_SignalSmokeMedicineSmall">
+		<action_sequence name="action_give_SmokeSignalWeakMedicine">
 			<action class="AddItems">
-				<property name="added_items" value="SignalSmokeMedicineSmall" />
+				<property name="added_items" value="SmokeSignalWeakMedicine" />
 				<property name="added_item_counts" value="1" />
 			</action>
 			<action class="AddBuff">
 				<property name="buff_name" value="Buff_Ammo_SmallCase_Status" />
 			</action>
 		</action_sequence>
-		<action_sequence name="action_give_SignalSmokeMedicineBig">
+		<action_sequence name="action_give_SmokeSignalModerateMedicine">
 			<action class="AddItems">
-				<property name="added_items" value="SignalSmokeMedicineBig" />
+				<property name="added_items" value="SmokeSignalModerateMedicine" />
 				<property name="added_item_counts" value="1" />
 			</action>
 			<action class="AddBuff">

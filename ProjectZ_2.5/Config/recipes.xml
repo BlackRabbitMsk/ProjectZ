@@ -3496,51 +3496,51 @@
 		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 		<!-- REQUEST AMMO -->
 		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<recipe name="SignalSmokeFaint" craft_time="5" count="1">
+		<recipe name="SmokeSignalWeak" craft_time="5" count="1">
 			<ingredient name="UniversalParts" count="3"/>
 			<ingredient name="resourceForgedSteel" count="6"/>
 			<ingredient name="resourceScrapIron" count="15"/>
 			<ingredient name="ammoGasCan" count="250"/>
 		</recipe>
-		<recipe name="SignalSmokeMedium" craft_time="15" count="1">
+		<recipe name="SmokeSignalModerate" craft_time="15" count="1">
 			<ingredient name="UniversalParts" count="6"/>
 			<ingredient name="resourceForgedSteel" count="12"/>
 			<ingredient name="resourceScrapIron" count="30"/>
 			<ingredient name="ammoGasCan" count="500"/>
 		</recipe>
-		<recipe name="SignalSmokeStrong" craft_time="30" count="1">
+		<recipe name="SmokeSignalStrong" craft_time="30" count="1">
 			<ingredient name="UniversalParts" count="9"/>
 			<ingredient name="resourceForgedSteel" count="50"/>
 			<ingredient name="resourceScrapIron" count="100"/>
 			<ingredient name="ammoGasCan" count="1500"/>
 		</recipe>
 		
-		<recipe name="SignalSmokeAmmoSmall" craft_time="5" count="1">
+		<recipe name="SmokeSignalWeakAmmo" craft_time="5" count="1">
 			<ingredient name="UniversalParts" count="3"/>
 			<ingredient name="resourceForgedSteel" count="6"/>
 			<ingredient name="resourceScrapIron" count="15"/>
 			<ingredient name="ammoGasCan" count="250"/>
 		</recipe>
-		<recipe name="SignalSmokeAmmoBig" craft_time="15" count="1">
+		<recipe name="SmokeSignalModerateAmmo" craft_time="15" count="1">
 			<ingredient name="UniversalParts" count="6"/>
 			<ingredient name="resourceForgedSteel" count="12"/>
 			<ingredient name="resourceScrapIron" count="30"/>
 			<ingredient name="ammoGasCan" count="500"/>
 		</recipe>
-		<recipe name="SignalSmokeAmmoLarge" craft_time="30" count="1">
+		<recipe name="SmokeSignalStrongAmmo" craft_time="30" count="1">
 			<ingredient name="UniversalParts" count="9"/>
 			<ingredient name="resourceForgedSteel" count="50"/>
 			<ingredient name="resourceScrapIron" count="100"/>
 			<ingredient name="ammoGasCan" count="1500"/>
 		</recipe>
 		
-		<recipe name="SignalSmokeMedicineSmall" craft_time="15" count="1">
+		<recipe name="SmokeSignalWeakMedicine" craft_time="15" count="1">
 			<ingredient name="UniversalParts" count="3"/>
 			<ingredient name="resourceForgedSteel" count="6"/>
 			<ingredient name="resourceScrapIron" count="15"/>
 			<ingredient name="ammoGasCan" count="250"/>
 		</recipe>
-		<recipe name="SignalSmokeMedicineBig" craft_time="15" count="1">
+		<recipe name="SmokeSignalModerateMedicine" craft_time="15" count="1">
 			<ingredient name="UniversalParts" count="6"/>
 			<ingredient name="resourceForgedSteel" count="12"/>
 			<ingredient name="resourceScrapIron" count="30"/>
